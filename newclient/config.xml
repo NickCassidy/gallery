@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery
+	galleryCaption="Juicebox-Pro Gallery"
+>
+  <image imageURL="../images/newclient/suarez.jpg"
+	thumbURL="../images/newclient/thumbs/The Producers.jpg"
+	linkURL="#"
+	linkTarget="_blank">
+    <title></title>
+   	<caption>Caption 1 Caption 1 Caption 1 Caption 1 Caption 1</caption>
+  </image>
+  <image imageURL="../images/newclient/lionking.jpg"
+	thumbURL="../images/newclient/thumbs/Andile Gumbi - Lion King.jpg"
+	linkURL="#"
+	linkTarget="_blank">
+    <title></title>
+    <caption>Caption 2</caption>
+  </image>
+  <image imageURL="../images/newclient/suarez.jpg"
+	thumbURL="../images/newclient/thumbs/Dane Hurst and Camille Bracher - Inala.jpg"
+	linkURL="../images/wide.jpg"
+	linkTarget="_blank">
+	<title></title>
+    <caption>Caption 3</caption>
+  </image>
+  <image imageURL="../images/newclient/equus.jpg"
+	thumbURL="../images/newclient/thumbs/Equus.jpg"
+	linkURL="#"
+	linkTarget="_blank">
+	<title></title>
+    <caption>Caption 4</caption>
+  </image>
+  <image imageURL="../images/newclient/suarez.jpg"
+	thumbURL="../images/newclient/thumbs/Gemma Arterton - Nell Gwynn.jpg"
+	linkURL="../images/wide.jpg"
+	linkTarget="_blank">
+	<title></title>
+    <caption>Caption 5</caption>
+  </image>
+  <image imageURL="../images/newclient/hug.jpg"
+	thumbURL="../images/newclient/thumbs/Harry Melling.jpg"
+	linkURL="#"
+	linkTarget="_blank">
+	<title></title>
+	<caption>Caption 6</caption>
+  </image>
+  <image imageURL="images/newclient/suarez.jpg"
+	thumbURL="images/newclient/thumbs/Henry Goodman - Looking at Lucian.jpg"
+	linkURL="images/wide.jpg"
+	linkTarget="_blank">
+	<title></title>
+	<caption>Caption 7</caption>
+  </image>
+  <image imageURL="images/newclient/cross.jpg"
+	thumbURL="images/newclient/thumbs/Heroes-and-Bonnie-2.jpg"
+	linkURL="images/tall.jpg"
+	linkTarget="_blank">
+	<title></title>
+    <caption>Caption 8</caption>
+  </image>
+  <image imageURL="images/newclient/suarez.jpg"
+	thumbURL="images/newclient/thumbs/John Simm.jpg"
+	linkURL="images/wide.jpg"
+	linkTarget="_blank">
+	<title></title>
+    <caption>Caption 9</caption>
+  </image>
+   <image imageURL="images/newclient/ella.jpg"
+	thumbURL="images/newclient/thumbs/Katherine Parkinson Steve Pemberton Ralf Little Emily Berrington and Rufus Jones - Dead Funny.jpg"
+	linkURL="images/tall.jpg"
+	linkTarget="_blank">
+	<title></title>
+    <caption>Caption 10</caption>
+  </image>
+ <image imageURL="images/newclient/suarez.jpg"
+	thumbURL="images/newclient/thumbs/Kelly Osbourne - Chicago.jpg"
+	linkURL="images/wide.jpg"
+	linkTarget="_blank">
+	<title></title>
+    <caption>Caption 11</caption>
+  </image>
+  <image imageURL="images/newclient/wide.jpg"
+	thumbURL="images/newclient/thumbs/Laurence Fox - The Real Thing.jpg"
+	linkURL="images/tall.jpg"
+	linkTarget="_blank">
+	<title></title>
+    <caption>Caption 12</caption>
+  </image>
+</juiceboxgallery>
