@@ -288,6 +288,7 @@ img{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 #contactDetails p a{
@@ -401,8 +402,8 @@ h1{
   display: block;
   height: 20px;
   text-align: center;
-  margin-top:40px; 
-  font-size: 24px !important;
+  margin-top:20px; 
+  font-size: 18px !important;
 }
 p{
   font-size: 18px;
@@ -412,7 +413,7 @@ p{
   display: block;
   margin-left:auto;
   margin-right:auto;
-  margin-top: 70px;
+  margin-top: 40px;
   max-width: 300px;
 }
 .contactPageNavItem{
@@ -445,13 +446,14 @@ h1 a:hover{
   display: none;
 }
 header #brandingDesktop{
-  padding-top:20px;
+  padding-top:10px;
   min-height:20px;
   overflow:hidden;
   text-align: center;
 }
 #brandingMobile {
   padding-top: 0px !important;
+  padding-bottom: 2px;
 }
 }
 
