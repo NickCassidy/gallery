@@ -504,7 +504,8 @@ div.index-navigation.jb-navigation .jbn-nav-button-icon
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
 	border-radius: 15px;
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0) !important;
+	margin-left:-4% !important;
 }
 
 .jb-flag-msie-bf9 .jb-navigation .jbn-left-button
@@ -520,7 +521,7 @@ div.index-navigation.jb-navigation .jbn-nav-button-icon
 	-moz-border-radius: 14px;
 	-webkit-border-radius: 14px;
 	border-radius: 14px;
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0) !important;
 }
 
 .jb-flag-msie-bf9 .jb-navigation .jbn-right-button
