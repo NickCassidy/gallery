@@ -56,5 +56,10 @@
 				textColor: "#808080",
 				navButtonIconColor: "#808080",
 				navButtonIconHoverColor: "#ffffff",
+				enableKeyboardControls:"true"
 				
 	});
+
+
+
+
