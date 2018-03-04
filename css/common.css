@@ -342,7 +342,7 @@ img{
   display: block;
   margin-left:auto;
   margin-right:auto;
-  margin-top: 72px;
+  margin-top: 80px;
   max-width: 1022px;
   display: -webkit-flex; /* Safari */
     -webkit-flex-wrap: wrap; /* Safari 6.1+ */
@@ -359,7 +359,7 @@ img{
 }
 
 #contact{
-  padding-top: 30px;
+  padding-top: 20px;
   min-height: 50px;
   text-align: center;
 }
@@ -367,13 +367,11 @@ img{
 /* media queries */
 
 
-@media only screen and (min-width: 240px) and (max-width: 745px) {
+@media only screen and (min-width: 240px) and (max-width: 745px){
 #contact{
   display: none; 
 } 
-}
 
-@media only screen and (min-width: 240px) and (max-width: 745px) {
 #contactDetails p a{
   display: block;
   height: 20px;
@@ -382,15 +380,27 @@ img{
   font-size: 18px !important;
 }
 
-#centerBlock{
-  width:100%;
+ ul.centerBlock{
   display: block;
+  margin-left: 0px;
+  list-style: none;
   text-align: center;
 }
 
-p{
+li.contactItem a{
+  margin-left: 0px;
   font-size: 18px;
+  line-height: 40px;
+  color: #ffffff;
 }
+
+li.contactItem{
+  margin-left: -30px;
+  font-size: 18px;
+  line-height: 40px;
+  color:#ffffff;
+}
+
 #contactPageNav{
   height: 30px;
   display: block;
@@ -407,6 +417,11 @@ p{
   text-align: center;
   height: 36px;
 }
+
+p{
+  font-size: 18px;
+}
+
 h1{
   font-size: 34px;
   color:#808080;
@@ -424,7 +439,7 @@ h1 a:hover{
 }
 
 
-@media only screen and (min-width: 240px) and (max-width: 1146px) {
+@media only screen and (min-width: 240px) and (max-width: 1246px) {
 
 #brandingDesktop h1{
   display: none;
@@ -441,8 +456,26 @@ header #brandingDesktop{
 }
 }
 
+/* menu */
+@media only screen and (min-width: 240px) and (max-width:819px) {
+  #mobile{
+}
+.container {
+  height: 66px;
+}
+#desktop{
+    display: none;
+}
+}
 
-@media only screen and (min-width: 746px) and (max-width: 4000px) {
+@media only screen and (min-width: 820px) and (max-width:4800px) {
+#mobile{
+    display: none;
+}
+}
+
+
+@media only screen and (min-width: 745px) and (max-width: 4000px) {
 h1{
   font-size: 60px;
   margin-top: -2px;
@@ -460,42 +493,49 @@ h1{
 }
 }
 
-@media only screen and (min-width: 1147px) and (max-width: 4000px) {
+@media only screen and (min-width: 746px) and (max-width:4800px) {
+li.contactItem {
+  text-align: center;
+  font-size: 34px !important;
+  line-height: 54px;
+  color: #ffffff;
+}
 
+li.contactItem a{
+  text-align: center;
+  font-size: 34px !important;
+  line-height: 54px;
+  color:#ffffff;
+}
+}
+
+@media only screen and (min-width: 1247px) and (max-width: 4000px) {
 #brandingMobile h1{
   display: none;
 }
 }
 
-/* menu */
-@media only screen and (min-width: 240px) and (max-width:819px) {
-  #mobile{
-}
-.container {
-  height: 66px;
-}
-#desktop{
-    display: none;
-}
-}
-
-
-@media only screen and (min-width: 820px) and (max-width:4800px) {
-#desktop{
-}
-#mobile{
-    display: none;
-}
-}
 
 @media only screen and (min-width: 746px) and (max-width:4800px) {
-#centerBlock{
-  width:436px;
+ul.centerBlock{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  text-align: left;
+  list-style: none;
+  padding-top:21px; 
+  padding-bottom:21px;
+  padding-left: -40px !important];
 }
 }
 
-
+@media only screen and (min-width: 240px) and (max-width:744px) {
+ul.centerBlock{
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  padding-top:0px; 
+  padding-bottom:0px;
+  padding-left:-40px !important;
+}
