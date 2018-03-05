@@ -10,18 +10,21 @@
 
 				gtag('config', 'UA-17355854-1');
 			</script>
-			<meta http-equiv="Content-Type">
-			<meta charset="utf-8" />
-			<meta http-equiv="content-type" content="text/html">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=1"/>
+			<meta charset="utf-8"/>
+			<link rel="manifest" href="manifest/manifest.json">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=0"/>
 
-			<title>Simon Turtle | Photographer of Actors, Celebrities, Comedians and Theatre advertising | London, UK</title>
+			<title>Simon Turtle | Photographer | London, UK</title>
 
 			<meta name="description" content="The portfolio site of Simon Turtle, a London based people and portrait photographer specialising in actors, celebrities, comedians and theatre advertising.">
 			<meta name="author" content="Simon Turtle">
 			<link rel="stylesheet" href="./css/common.css">
 			<link href="https://fonts.googleapis.com/css?family=Work+Sans:600" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Work+Sans:700" rel="stylesheet">
+			<link rel="apple-touch-icon" href="apple-touch-icon.png"><!--iphone-->
+			<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon.png"><!--ipad-->
+			<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"><!--iphone-retina-->
+			<link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon.png"><!--ipad-retina-->
 			<script type="application/ld+json">
 						{
 						"@context": "http://schema.org",
@@ -158,4 +161,15 @@
 					</section>
 		<h2 id="contact"><a href="contact/">Contact</a></h2>
 	</body>
+	<script>
+  if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register('service-worker.js')
+      .then(function(reg){
+        console.log("Yes, it did.");
+      }).catch(function(err) {
+        console.log("No it didn't. This happened: ", err)
+      });
+  }
+</script>
 </html>

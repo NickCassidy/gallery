@@ -1,0 +1,23 @@
+{
+	"short_name":"Nick",
+	"name":"Nick Cassidy",
+	"icons":[
+		{"src":"https://achromat.net/simon_new/web/images/manifest/manifestIcon.png",
+		"sizes":"192x192",
+		"type":"image/png"
+		}
+	],
+	"start_url":"https://achromat.net/simon_new/web/index.html",
+	"scope":"/",
+	"display":"standalone",
+	"lang":"en",
+	"background_color":"#ffffff",
+	"description":"Test description",
+	"orientation":"portrait-primary",
+	"theme_color":"#e6e6e6",
+	"related_applications":[
+		{"platform":"web",
+		"url":"https://www.achromat.net"
+		}
+	]
+}
