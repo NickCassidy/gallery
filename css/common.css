@@ -438,7 +438,6 @@ header #brandingDesktop{
   padding-bottom: 2px;
 }
 ul.centerBlock{
-  display: block;
   margin-left: auto;
   margin-right: auto;
   list-style: none;
@@ -447,16 +446,7 @@ ul.centerBlock{
   padding-left: -40px !important];
 }
 #contactPageNav{
-  height: 30px;
-  display: block;
-  margin-left:auto;
-  margin-right:auto;
   margin-top: 62px;
-  max-width: 1022px;
-  display: -webkit-flex; /* Safari */
-    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
-    display: flex;
-    flex-wrap: wrap;
 }
 }
 
@@ -489,10 +479,6 @@ h1{
 }
 .contactPageNavItem{
   width: 140px;
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-  text-align: center;
   height: 40px;
 }
 }
@@ -540,15 +526,25 @@ ul.centerBlock{
   padding-left:-40px !important;
 }
 #contactPageNav{
-  height: 30px;
-  display: block;
-  margin-left:auto;
-  margin-right:auto;
   margin-top: 40px;
   max-width: 300px;
-  display: -webkit-flex; /* Safari */
-    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
-    display: flex;
-    flex-wrap: wrap;
+}
+header #brandingDesktop{
+   min-height:20px;
+}
+}
+
+@media only screen and (min-width: 746px) and (max-width:969px) {
+ul.centerBlock{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  padding-top:6px; 
+  padding-bottom:0px;
+  padding-left:-40px !important;
+}
+#contactPageNav{
+  margin-top: 80px;
 }
 }
