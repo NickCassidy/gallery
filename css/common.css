@@ -401,23 +401,6 @@ li.contactItem{
   color:#ffffff;
 }
 
-#contactPageNav{
-  height: 30px;
-  display: block;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top: 40px;
-  max-width: 300px;
-}
-.contactPageNavItem{
-  width: 195px;
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-  text-align: center;
-  height: 36px;
-}
-
 p{
   font-size: 18px;
 }
@@ -446,13 +429,34 @@ h1 a:hover{
 }
 header #brandingDesktop{
   padding-top:10px;
-  min-height:20px;
+  min-height:60px;
   overflow:hidden;
   text-align: center;
 }
 #brandingMobile {
   padding-top: 0px !important;
   padding-bottom: 2px;
+}
+ul.centerBlock{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  padding-top:39px; 
+  padding-bottom:21px;
+  padding-left: -40px !important];
+}
+#contactPageNav{
+  height: 30px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 62px;
+  max-width: 1022px;
+  display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
 }
 }
 
@@ -513,10 +517,6 @@ li.contactItem a{
 #brandingMobile h1{
   display: none;
 }
-}
-
-
-@media only screen and (min-width: 746px) and (max-width:4800px) {
 ul.centerBlock{
   display: block;
   margin-left: auto;
@@ -528,9 +528,9 @@ ul.centerBlock{
 }
 }
 
+
 @media only screen and (min-width: 240px) and (max-width:744px) {
 ul.centerBlock{
-  
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -538,4 +538,17 @@ ul.centerBlock{
   padding-top:0px; 
   padding-bottom:0px;
   padding-left:-40px !important;
+}
+#contactPageNav{
+  height: 30px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 40px;
+  max-width: 300px;
+  display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+}
 }
