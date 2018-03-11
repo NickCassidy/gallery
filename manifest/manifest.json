@@ -1,6 +1,6 @@
 {
 	"short_name":"Simon Turtle",
-	"name":"Simon Turtle",
+	"name":"Simon Turtle - Photographer",
 	"icons":[
 		{"src":"../images/manifest/manifestIcon-192.png",
 		"sizes":"192x192",
@@ -44,7 +44,7 @@
 	"display":"standalone",
 	"lang":"en",
 	"background_color":"#000000",
-	"description":"Test description",
+	"description":"The portfolio site of Simon Turtle, a London based people and portrait photographer specialising in actors, celebrities, comedians and theatre advertising.",
 	"orientation":"portrait-primary",
 	"theme_color":"#000000",
 	"related_applications":[
