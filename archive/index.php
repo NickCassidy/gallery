@@ -2,7 +2,7 @@
 <html lang="en"><!-- Archive page -->
     <head>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17355854-1"></script>
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17355854-1"></script> -->
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -21,9 +21,6 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:700"> 
         <link rel="icon" href="../favicon.ico">
-        <script>
-			document.write('<style>.noscript { display: none; }</style>');
-		</script>
         <script type="application/ld+json">
         {    
             "@context":"http://schema.org",
@@ -491,6 +488,8 @@
         </header>
         <script src="../jbcore/juicebox.js"></script>
         <script src="../jbcore/settings.js"></script>	
-            <div id="juicebox-container"></div>
+            <!--<div id="juicebox-container"></div>-->
+        <div id="juicebox-container">
+        <noscript><?php include "galleryListSeo.php"; ?></noscript>
     </body>
 </html>
