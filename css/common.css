@@ -2,8 +2,7 @@
 
 body 
 {
-  /* setting position absolute and with 100% width resolves overflow issue */
-  position:absolute;
+  /* setting 100% width resolves overflow issue */
   color:#ffffff;
   width:100%;
   margin: 0;
@@ -369,6 +368,24 @@ img{
   text-align: center;
 }
  
+
+#noscriptImageAlignment{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+  margin-top: 100px;
+}
+
+.noscriptImages{
+  style=\"width:400px;
+}
+
+.noscriptCaptions{
+  font-size: 20px;
+  text-align: center;
+}
+
 /* media queries */
 
 
@@ -437,6 +454,7 @@ h1 a:hover{
   display: none;
 }
 
+
 header #brandingDesktop{
   padding-top:10px;
   min-height:60px;
@@ -458,6 +476,10 @@ ul.centerBlock{
 #contactPageNav{
   margin-top: 62px;
 }
+body{
+  position: fixed !important;
+}
+
 }
 
 /* menu */

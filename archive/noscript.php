@@ -15,20 +15,18 @@
   $doc->load( 'config.xml' );
   
   $gallery = $doc->getElementsByTagName( "simpleviewergallery" );
- 	
-  print "<section id=\"galleryImages\">";
   
   $images = $doc->getElementsByTagName( "image" );
 	
-  print "<ul>";
-  print "<p>Photo gallery of Simon Turtle, a London based people and portrait photographer specialising in actors, celebrities, comedians and theatre advertising. All images Copyright 2018 Simon Turtle</p>" . PHP_EOL;
+  print "<div = id=\"noscriptImageAlignment\">";
+
   foreach( $images as $image )
   {
  	 
 	 $largephoto = $image->getAttribute('imageURL');	 
 	 
-	 // strip unwanted preceding dots from path   
- 	 $largephoto = substr($largephoto, 2);   
+	 // strip slash and unwanted preceding dots from path   
+ 	 $largephoto = substr($largephoto, 3);   
    
    
 
@@ -40,10 +38,10 @@
       if ($pos>0) {
        $altcaption = substr($altcaption, 0, $pos);
       }
-		  
-	  print "<li style=\"list-style-type: none;\"><p><a href=\"$imgpath$largephoto\"><img src=\"$imgpath/$largephoto\"alt=\"$altcaption\"></a><caption>$caption</caption></li>" . PHP_EOL;
+
+	  print "<img src=\"$imgpath/$largephoto\" alt=\"$altcaption\" class=\"noscriptImages\"\"/><p class=\"noscriptCaptions\"\">$caption</p>\n";
 
    }
-   print "</ul>";
-  print "</section>"; 
+    print "</div>";
+
 ?>

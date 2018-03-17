@@ -447,15 +447,14 @@
             ]
         }
         </script>
-    </head>
-    <body style="position:fixed;">
+    <body>
 		<header id="alignWithNav">
             <div class="container">
                 <div id="brandingGalleries">
                     <h1><a href="../">SIMON TURTLE</a></h1>
                 </div>
-            </div> 
-        </header>       
+        </header>
+
         <header id="desktop">   
             <nav id="topnav">
                 <ul id="topnavlist">
@@ -468,13 +467,17 @@
                 </ul>
             </nav>
         </header>
+
+
         <header id="mobile">
             <nav>
+
                 <div id="menuToggle">
                     <input type="checkbox" />
                         <span></span>
                         <span></span>
                         <span></span>
+
                             <ul id="menu">
                                 <li><a href="../portfolio/">Portfolio</a></li>
                                 <li><a href="../portraits/">Portraits</a></li>
@@ -483,13 +486,16 @@
                                 <li><a href="../ella/">Ella</a></li>
                                 <li><a href="../contact/">Contact</a></li>
                             </ul>
+                                        
                 </div>
             </nav>
         </header>
+
         <script src="../jbcore/juicebox.js"></script>
         <script src="../jbcore/settings.js"></script>	
-            <!--<div id="juicebox-container"></div>-->
-        <div id="juicebox-container">
-        <noscript><?php include "galleryListSeo.php"; ?></noscript>
+            <div id="juicebox-container"></div>
+        <noscript>
+<?php include "noscript.php"; ?>
+        </noscript>
     </body>
 </html>
