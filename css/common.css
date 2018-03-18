@@ -1,13 +1,12 @@
 
 
-body 
-{
-  /* setting 100% width resolves overflow issue */
+body{
   color:#ffffff;
   width:100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */background-color: #000000;
+  overflow-x: hidden; /* hide the mobile menu on the right */
+  background-color: #000000;
   font: 12px/1.2 'Work Sans', sans-serif;
 }
 
@@ -17,11 +16,11 @@ body
   overflow:hidden; 
 }
 
-#desktop {
+#desktop{
   margin-right: 26px;
 }
 
-header #topnav {
+header #topnav{
   background:#000000;
   padding-top:0px;
   min-height:50px;
@@ -82,10 +81,9 @@ header #brandingGalleries h1 a:hover{
   max-height: 60px;
 }
 
-/* Hamburger navigation */
+/* Hamburger mobile navigation */
 
-#menu li
-{
+#menu li{
   padding: 10px 0;
   font-size: 16px;
 }
@@ -106,8 +104,7 @@ header #brandingGalleries h1 a:hover{
   font-weight: bold;
 }
 
-#menuToggle
-{
+#menuToggle{
   display: block;
   position: absolute;
   top: 32px;
@@ -117,8 +114,7 @@ header #brandingGalleries h1 a:hover{
   user-select: none;
 }
 
-#menuToggle input
-{
+#menuToggle input{
   display: block;
   width: 40px;
   height: 32px;
@@ -131,8 +127,7 @@ header #brandingGalleries h1 a:hover{
   -webkit-touch-callout: none;
 }
 
-#menuToggle span
-{
+#menuToggle span{
   display: block;
   width: 33px;
   height: 4px;
@@ -147,50 +142,39 @@ header #brandingGalleries h1 a:hover{
               opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
-{
+#menuToggle span:first-child{
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
-{
+#menuToggle span:nth-last-child(2){
   transform-origin: 0% 100%;
 }
 
-/* 
- * Transform hamburger into a cross
- */
-#menuToggle input:checked ~ span
-{
+/* Transform hamburger into a cross*/
+
+#menuToggle input:checked ~ span{
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
 
-/*
- * Hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+/* Hide the middle one line */
+
+#menuToggle input:checked ~ span:nth-last-child(3){
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+/* Last one should go the other direction */
+
+#menuToggle input:checked ~ span:nth-last-child(2){
   opacity: 1;
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
+/* Make this absolute positioned at the top left of the screen */
+
+#menu{
   position: absolute;
   width: 150px;
   margin: -100px 0 0 0;
@@ -208,16 +192,15 @@ header #brandingGalleries h1 a:hover{
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-/*
- * Fade in from the left
- */
-#menuToggle input:checked ~ ul
-{
+/* Fade in from the left */
+
+#menuToggle input:checked ~ ul{
   transform: scale(1.0, 1.0);
   opacity: 1;
 }
 
-/* Header **/
+/* Header */
+
 header #brandingDesktop{
   width: 90%;
   display: block;
@@ -281,29 +264,9 @@ img{
   max-width: 100%;
 }
 
-#contactTop{
-  text-align: center;
-  padding-top: 0px;
-  padding-bottom: 20px;
-}
 
+/* Homepage box styling */
 
-#contactDetails p a{
-  height: 40px;
-  text-align: left;
-  font-size: 34px;
-  color:#ffffff;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  transition: color 0.3s ease;
-}
-
-#contactDetails p a:hover{
-  color:#808080;
-}
-
-/* Homepage boxes */
 .box{
   border: 1px solid #808080;
   margin-left: 2px;
@@ -336,9 +299,17 @@ img{
   text-align: center;
 }
 
-.caption {
+.caption{
   text-align:center;
   font-size: 18px;
+}
+
+/* contact page styling */
+
+#contact{
+  padding-top: 20px;
+  min-height: 50px;
+  text-align: center;
 }
 
 #contactPageNav{
@@ -362,34 +333,57 @@ img{
   text-align: center;
 }
 
-#contact{
-  padding-top: 20px;
-  min-height: 50px;
+#contactTop{
   text-align: center;
+  padding-top: 0px;
+  padding-bottom: 20px;
 }
- 
+
+
+#contactDetails p a{
+  height: 40px;
+  text-align: left;
+  font-size: 34px;
+  color:#ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+#contactDetails p a:hover{
+  color:#808080;
+}
+
+/* noscript styling */ 
 
 #noscriptImageAlignment{
   display: block;
   margin-right: auto;
   margin-left: auto;
-  width: 400px;
+  width: 600px;
   margin-top: 100px;
 }
 
 .noscriptImages{
-  style=\"width:400px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width:400px;
+  padding-top: 20px;
 }
 
 .noscriptCaptions{
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
+  line-height: 30px;
 }
 
 /* media queries */
 
 
 @media only screen and (min-width: 240px) and (max-width: 745px){
+
 #contact{
   display: none; 
 } 
@@ -444,7 +438,7 @@ h1 a:hover{
 }
 
 
-@media only screen and (min-width: 240px) and (max-width: 1246px) {
+@media only screen and (min-width: 240px) and (max-width: 1246px){
 
 #brandingDesktop h1{
   display: none;
@@ -454,17 +448,18 @@ h1 a:hover{
   display: none;
 }
 
-
 header #brandingDesktop{
   padding-top:10px;
   min-height:60px;
   overflow:hidden;
   text-align: center;
 }
+
 #brandingMobile {
   padding-top: 0px !important;
   padding-bottom: 2px;
 }
+
 ul.centerBlock{
   margin-left: auto;
   margin-right: auto;
@@ -473,48 +468,58 @@ ul.centerBlock{
   padding-bottom:21px;
   padding-left: -40px !important];
 }
+
 #contactPageNav{
   margin-top: 62px;
 }
+
 body{
   position: fixed !important;
 }
-
 }
 
 /* menu */
-@media only screen and (min-width: 240px) and (max-width:819px) {
 
-.container {
+@media only screen and (min-width: 240px) and (max-width:819px){
+
+.container{
   height: 66px;
 }
+
 #desktop{
     display: none;
 }
 }
 
-@media only screen and (min-width: 820px) and (max-width:4800px) {
+
+@media only screen and (min-width: 820px) and (max-width:4800px){
+
 #mobile{
     display: none;
 }
 }
 
 
-@media only screen and (min-width: 745px) and (max-width: 4000px) {
+@media only screen and (min-width: 745px) and (max-width: 4000px){
+
 h1{
   font-size: 60px;
   margin-top: -2px;
 } 
+
 #contactTop{
   display: none;
 }
+
 .contactPageNavItem{
   width: 140px;
   height: 40px;
 }
 }
 
-@media only screen and (min-width: 746px) and (max-width:4800px) {
+
+@media only screen and (min-width: 746px) and (max-width:4800px){
+
 li.contactItem {
   text-align: center;
   font-size: 34px !important;
@@ -530,7 +535,9 @@ li.contactItem a{
 }
 }
 
-@media only screen and (min-width: 1247px) and (max-width: 4000px) {
+
+@media only screen and (min-width: 1247px) and (max-width: 4000px){
+
 #brandingMobile h1{
   display: none;
 }
@@ -551,7 +558,8 @@ ul.centerBlock{
 }
 
 
-@media only screen and (min-width: 240px) and (max-width:744px) {
+@media only screen and (min-width: 240px) and (max-width:744px){
+
 ul.centerBlock{
   display: block;
   margin-left: auto;
@@ -561,16 +569,20 @@ ul.centerBlock{
   padding-bottom:0px;
   padding-left:-40px !important;
 }
+
 #contactPageNav{
   margin-top: 40px;
   max-width: 300px;
 }
+
 header #brandingDesktop{
    min-height:20px;
 }
 }
 
-@media only screen and (min-width: 746px) and (max-width:969px) {
+
+@media only screen and (min-width: 746px) and (max-width:969px){
+
 ul.centerBlock{
   display: block;
   margin-left: auto;
@@ -580,6 +592,7 @@ ul.centerBlock{
   padding-bottom:0px;
   padding-left:-40px !important;
 }
+
 #contactPageNav{
   margin-top: 80px;
 }
