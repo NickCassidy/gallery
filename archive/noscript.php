@@ -18,11 +18,20 @@
  
     $images = $doc->getElementsByTagName("image");
 
+    $index = $doc->getElementsByTagName("index");
+
+/* http://php.net/manual/en/class.domnodelist.php */
+$number =$index->length;
+
+print ($number);
+
+
 print "<div = id=\"noscriptImageAlignment\">";
 
-    foreach( $images as $image )
+    foreach( $images as $image )   
+
     {
-     
+        
         $largephoto = $image->getAttribute('imageURL');	 
 	 
         // strip slash and unwanted preceding dots from path   
@@ -41,8 +50,10 @@ print "<div = id=\"noscriptImageAlignment\">";
             $altcaption = substr($altcaption, 0, $pos);
 
             }
-    for ($i=0; $i<10; $i++) 
-        {       
+        
+for ($i=0; $i<$number; $i++)
+        {
+
 
 print "<img src=\"$imgpath/$largephoto\" alt=\"$altcaption\" class=\"noscriptImages\"  tabindex=\"$i\"  \"/><p class=\"noscriptCaptions\"\">$caption</p>\n";
 

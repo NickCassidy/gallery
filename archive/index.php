@@ -17,6 +17,14 @@
 
 		<meta name="description" content="The portfolio site of Simon Turtle, a London based people and portrait photographer specialising in actors, celebrities, comedians and theatre advertising.">
         <meta name="author" content="Simon Turtle">
+        <meta property="og:site_name" content="Simon Turtle"/>
+        <meta property="og:title" content="Celebrity Photographer London - Simon Turtle"/>
+        <meta property="og:url" content="https://www.simonturtle.com/"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:description" content="Simon Turtle is a London based Photographer specialising in Celebrity Portraits, Theatre Advertising, Musicians, Actors, Comedians, Editorial Features and TV Promotion."/>
+        <meta property="og:image" content="https://www.simonturtle.com/images/jsonldImage/lionking.jpg"/>
+        <meta property="og:image:width" content="372"/>
+        <meta property="og:image:height" content="537"/>
         <link rel="stylesheet" href="../css/common.css" type="text/css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:700"> 
