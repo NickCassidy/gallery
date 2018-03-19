@@ -1,7 +1,7 @@
 <?php
 
 ######################################################
-# License:		Copyright (c) 2010 Mikael Kjellstrom #
+# Copyright (c) 2010 Mikael Kjellstrom #
 ######################################################
 
     $imgpath = 'https://www.achromat.net/simon_new/web';  // The path to the gallery 
@@ -20,13 +20,7 @@
 
     $index = $doc->getElementsByTagName("index");
 
-/* http://php.net/manual/en/class.domnodelist.php */
-$number =$index->length;
-
-print ($number);
-
-
-print "<div = id=\"noscriptImageAlignment\">";
+print "<div = id=\"noscriptImageAlignment\">\n";
 
     foreach( $images as $image )   
 
@@ -37,11 +31,17 @@ print "<div = id=\"noscriptImageAlignment\">";
         // strip slash and unwanted preceding dots from path   
         $largephoto = substr($largephoto, 3);   
    
-        $captions = $image->getElementsByTagName("caption");
+        $captions = $image->getElementsByTagName('caption');
 
         $caption = $captions->item(0)->nodeValue;
   
         $altcaption = substr($caption, 0, $altmaxchars);
+
+        /* retrieve index number for each image for tabindexing */ 
+
+        $indexes = $image->getElementsByTagName('index');
+
+        $i = $indexes->item(0)->nodeValue;
 
         $pos = strrpos($altcaption, " ");    
 
@@ -49,15 +49,9 @@ print "<div = id=\"noscriptImageAlignment\">";
 
             $altcaption = substr($altcaption, 0, $pos);
 
-            }
+                }
         
-for ($i=0; $i<$number; $i++)
-        {
-
-
 print "<img src=\"$imgpath/$largephoto\" alt=\"$altcaption\" class=\"noscriptImages\"  tabindex=\"$i\"  \"/><p class=\"noscriptCaptions\"\">$caption</p>\n";
-
-        }
 
     }
 print "</div>";
