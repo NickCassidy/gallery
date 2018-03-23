@@ -501,5 +501,8 @@
         <script src="../jbcore/juicebox.js"></script>
         <script src="../jbcore/settings.js"></script>	
             <div id="juicebox-container"></div>
+        <noscript>
+            <?php include "../noscript.php"; ?>
+        </noscript>
     </body>
 </html>

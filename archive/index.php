@@ -10,8 +10,8 @@
 
             gtag('config', 'UA-17355854-1');
         </script>
-        <meta charset="utf-8" />
-		<meta name="viewport" id="jb-viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=0" />
+        <meta charset="utf-8"/>
+		<meta name="viewport" id="jb-viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=0"/>
 
         <title>Simon Turtle - Photographer | Archive</title>
 
@@ -25,6 +25,7 @@
         <meta property="og:image" content="https://www.simonturtle.com/images/jsonldImage/lionking.jpg"/>
         <meta property="og:image:width" content="372"/>
         <meta property="og:image:height" content="537"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin/>
         <link rel="stylesheet" href="../css/common.css" type="text/css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:700"> 
@@ -498,12 +499,11 @@
                 </div>
             </nav>
         </header>
-
         <script src="../jbcore/juicebox.js"></script>
         <script src="../jbcore/settings.js"></script>	
             <div id="juicebox-container"></div>
         <noscript>
-<?php include "noscript.php"; ?>
+<?php include "../noscript.php"; ?>
         </noscript>
     </body>
 </html>
