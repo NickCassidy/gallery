@@ -2,7 +2,7 @@
 
     $thisDirectory = basename(__DIR__);
 
-    $imgpath = 'https://www.achromat.net/simon_new/web/' . $thisDirectory;  // The path to the gallery 
+    $imgpath = 'https://www.simonturtle.com';  // The path to the gallery 
 
     $altmaxchars = "50";   // The maximum characters of the ALT tag taken from the caption 
  

@@ -456,6 +456,7 @@
             ]
         }
         </script>
+    </head>
     <body>
 		<header id="alignWithNav">
             <div class="container">
@@ -472,6 +473,7 @@
                     <li class="current"><a href="#">Archive</a></li>
                     <li><a href="../posters/">Posters</a></li>
                     <li><a href="../ella/">Ella</a></li>
+                    <li><a href="../about/">About</a></li>
                     <li><a href="../contact/">Contact</a></li>
                 </ul>
             </nav>
@@ -493,6 +495,7 @@
                                 <li class="selected"><a href="#">Archive</a></li>
                                 <li><a href="../posters/">Posters</a></li>
                                 <li><a href="../ella/">Ella</a></li>
+                                <li><a href="../about/">About</a></li>
                                 <li><a href="../contact/">Contact</a></li>
                             </ul>
                                         
@@ -503,7 +506,7 @@
         <script src="../jbcore/settings.js"></script>	
             <div id="juicebox-container"></div>
         <noscript>
-<?php include "../noscript.php"; ?>
+<?php include "noscript.php"; ?>
         </noscript>
     </body>
 </html>

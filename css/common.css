@@ -470,7 +470,7 @@ ul.centerBlock{
 }
 
 #contactPageNav{
-  margin-top: 62px;
+  margin-top: 80px;
 }
 
 body{
@@ -480,7 +480,7 @@ body{
 
 /* menu */
 
-@media only screen and (min-width: 240px) and (max-width:819px){
+@media only screen and (min-width: 240px) and (max-width:890px){
 
 .container{
   height: 66px;
@@ -499,6 +499,23 @@ body{
 }
 }
 
+
+@media only screen and (min-width: 745px) and (max-width: 850px){
+
+h1{
+  font-size: 60px;
+  margin-top: -2px;
+} 
+
+#contactTop{
+  display: none;
+}
+
+.contactPageNavItem{
+  width: 100px !important;
+  height: 40px;
+}
+}
 
 @media only screen and (min-width: 745px) and (max-width: 4000px){
 

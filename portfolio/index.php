@@ -460,6 +460,7 @@
                     <li><a href="../archive/">Archive</a></li>
                     <li><a href="../posters/">Posters</a></li>
                     <li><a href="../ella/">Ella</a></li>
+                    <li><a href="../about/">About</a></li>
                     <li><a href="../contact/">Contact</a></li>
                 </ul>
         </nav>
@@ -477,6 +478,7 @@
                             <li><a href="../archive/">Archive</a></li>
                             <li><a href="../posters/">Posters</a></li>
                             <li><a href="../ella/">Ella</a></li>
+                            <li><a href="../about/">About</a></li>
                             <li><a href="../contact/">Contact</a></li>
                         </ul>
             </div>
