@@ -1,6 +1,29 @@
 var CACHE = 'network-or-cache';
 
 
+//first section invokes workbox js file which is configured to scan for jpg files for them to be cached
+//https://developers.google.com/web/tools/workbox/guides/get-started 
+
+
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.0.0/workbox-sw.js');
+
+if (workbox) {
+  console.log(`Yay! Workbox is loaded 🎉`);
+} else {
+  console.log(`Boo! Workbox didn't load 😬`);
+}
+
+
+workbox.routing.registerRoute(
+  new RegExp('.*\.jpg'),
+  workbox.strategies.networkFirst()
+);
+
+//end of workbox jpg file caching
+
+//start of service worker
+//https://developers.google.com/web/fundamentals/codelabs/offline/ 
+
 self.addEventListener('install', function(evt) {
   console.log('The service worker is being installed.');
 
@@ -18,29 +41,28 @@ self.addEventListener('fetch', function(evt) {
 function precache() {
   return caches.open(CACHE).then(function (cache) {
     return cache.addAll([
-      'index.html',
-        './portfolio/index.html',
+        'index.html',
+        './portfolio/index.php',
         './portfolio/config.xml',
-        './portraits/index.html',
+        './portfolio/noscript.php',
+        './portraits/index.php',
         './portraits/config.xml',
-        './posters/index.html',
+        './portraits/noscript.php',
+        './posters/index.php',
         './posters/config.xml',
-        './archive/index.html',
+        './posters/noscript.php',
+        './archive/index.php',
         './archive/config.xml',
-        './ella/index.html',
+        './archive/noscript.php',
+        './ella/index.php',
         './ella/config.xml',
+        './ella/noscript.php',
         './css/common.css',
-        './css/theme.css',
-        './images/home/lionking-398w.jpg',
-        './images/home/lionking-195w.jpg',
-        './images/home/fs-398w.jpg',
-        './images/home/fs-195w.jpg',
-        './images/home/equus-398w.jpg',
-        './images/home/equus-195w.jpg',
-        './images/home/oac-398w.jpg',
-        './images/home/oac-195w.jpg',
-        './images/home/ella-398w.jpg',
-        './images/home/ella-195w.jpg'
+        './css/about.css',
+        './css/home.css',
+        './css/theme.css'
+
+
     ]);
   });
 }
