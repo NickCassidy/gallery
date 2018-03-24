@@ -1,0 +1,208 @@
+body{
+  font-family: 'Work Sans', sans-serif; 
+  margin:0;
+  background-color:#000000;
+}
+
+.font-effect-emboss {
+color: #808080 !important;
+
+}
+
+/* Header **/
+
+header #branding{
+  width: 90%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background-color:#000000;
+  padding-top:30px;
+  min-height:60px;
+  color: #808080;
+  overflow:hidden;
+}
+
+h1{
+  font-size: 50px;
+  color:#808080;
+}
+
+h1 a{
+  font-size: 50px;
+  color:#808080;
+}
+
+h1 a:hover{
+  font-size: 50px;
+  color:#ffffff;
+}
+
+
+.caption{
+    width: 195px;
+    text-align: center;
+}
+
+
+/* Boxes */
+
+#boxes{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background-color: #000000;
+  max-width: 1022px;
+  display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.boxAndCaption{
+  height: 400px;
+  width: 195px;
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+#contactPageNav{
+  height: 30px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 124px;
+  max-width: 1022px;
+  display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contactPageNavItem{
+  width: 195px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  text-align: center;
+}
+
+.box{
+  border: 1px solid #808080;
+  margin-left: 2px;
+  margin-right: 2px;
+  background-color: #000000;
+  width: 195px;
+  height: 281px;
+  margin-bottom: 20px;: 
+}
+
+#contact{
+  padding-top: 0px;
+  min-height: 50px;
+  text-align: center;
+}
+ 
+
+a{
+    font-size: 18px;
+    text-decoration: none;
+    color:#808080;
+}
+
+a:hover{
+    font-size: 18px;
+    text-decoration: none;
+    color:#ffffff;
+}
+
+#contactDetails{
+  display: block;
+  height: 195px;
+  color:white;
+  text-align: center;
+  font-size: 34px;
+}
+
+@media only screen and (min-width: 746px) and (max-width: 4000px) {
+h1{
+  font-size: 50px;
+} 
+#contactTop{
+  display: none;
+}
+.contactPageNavItem{
+  width: 140px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  text-align: center;
+  height: 40px;
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 745px) {
+h1{
+  font-size: 30px;
+} 
+}
+
+@media only screen and (min-width: 240px) and (max-width: 745px) {
+#contact{
+  display: none; 
+} 
+}
+
+@media only screen and (min-width: 240px) and (max-width: 745px) {
+#contactTop{
+  padding-top: 20px;
+  min-height: 20px;
+  text-align: center;
+} 
+#contactDetails{
+  display: block;
+  height: 120px;
+  color:white;
+  text-align: center;
+  font-size: 18px;
+  margin-top:40px; 
+}
+#contactPageNav{
+  height: 30px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 50px;
+  max-width: 300px;
+}
+.contactPageNavItem{
+  width: 195px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  text-align: center;
+  height: 40px;
+}
+h1{
+  font-size: 34px;
+  color:#808080;
+}
+
+h1 a{
+  font-size: 34px;
+  color:#808080;
+}
+
+h1 a:hover{
+  font-size: 34px;
+  color:#ffffff;
+}
+
+}
+
+
+

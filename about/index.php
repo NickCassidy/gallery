@@ -26,13 +26,14 @@
         <meta property="og:image:width" content="372"/>
         <meta property="og:image:height" content="537"/>
         <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin/>
-        <link rel="stylesheet" href="../css/common.css" type="text/css" />
+        <link rel="stylesheet" href="../css/about.css" type="text/css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:700"> 
         <link rel="icon" href="../favicon.ico">
        
     <body>
-		<header id="alignWithNav">
+        <div id="headerBackground">
+		<header>
             <div class="container">
                 <div id="brandingGalleries">
                     <h1><a href="../">SIMON TURTLE</a></h1>
@@ -76,10 +77,12 @@
                 </div>
             </nav>
         </header>
+    </div>
        <section>
-        <div>
-            <h1>here's a heading</h1>
-            <p>Here's some stuff</p>
+        <div id="aboutContentBlock">
+            <h1 class="aboutHeading">A bit about me...</h1>
+                <p class="aboutContent">Lorem ipsum dolor sit amet, affert animal pertinacia mel in, an saepe iudico sea. Vis vide inermis omittantur an. In omnis utamur sensibus pri. An vix modo eruditi dolores. In vel appellantur adversarium, audiam tincidunt no pri. Cu tota laudem soluta vel, no paulo temporibus est.</p>
+                <p class="aboutContent">Pri te iusto solet salutatus, eu scripta perfecto recusabo vim. Primis audiam usu ei, officiis maiestatis ullamcorper eos ei, id errem diceret vim. Ad qui elit efficiendi. At iriure postulant comprehensam vel. Adipisci temporibus mei ad, nonumes ancillae mandamus pri an. Qui diam ancillae interpretaris at.</p>
         </div>
        </section>
     </body>

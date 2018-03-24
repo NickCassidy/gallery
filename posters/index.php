@@ -570,7 +570,7 @@
         <script src="../jbcore/settings.js"></script>	
             <div id="juicebox-container"></div>
         <noscript>
-            <?php include "../noscript.php"; ?>
+            <?php include "noscript.php"; ?>
         </noscript>
     </body>
 </html>
