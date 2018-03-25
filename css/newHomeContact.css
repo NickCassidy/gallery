@@ -10,233 +10,6 @@ body{
   font: 12px/1.2 'Work Sans', sans-serif;
 }
 
-.container{
-  width:90%;
-  margin:auto;
-  overflow:hidden; 
-}
-
-#desktop{
-  margin-right: 26px;
-}
-
-header #topnav{
-  background:#000000;
-  padding-top:0px;
-  min-height:50px;
-  float: right;
-  margin-top: -32px;
-  font-weight:normal;
-}
-
-header #topnavlist li{
-  float:left;
-  display:inline;
-  padding-right:4px;
-}
-
-header #topnavlist a{
-  text-decoration: none;
-  color: #808080;
-  transition: color 0.3s ease;
-}
-
-header #topnav a{
-  color:#808080;
-  font-weight:normal;
-  font-size: 16px;
-  padding-right: 15px;
-  text-decoration: none;
-}
-
-header  #topnav a:hover{
-  color:#ffffff;
-  font-weight:normal;
-  text-decoration: none;
-}
-
-header #topnav .current a{
-  color:#ffffff;
-  text-decoration: none;
-}
-
-header #brandingGalleries{
-  float:left;
-}
-
-header #brandingGalleries h1 a{
-  margin:0;
-  font-size: 34px;
-  text-decoration: none;
-  font-weight: bold;
-  color:#808080;
-  transition: color 0.3s ease;
-}
-
-header #brandingGalleries h1 a:hover{
-  color:#ffffff;
-}
-
-#alignWithNav{
-  max-height: 60px;
-}
-
-/* About */
-#aboutContentBlock{
-width: 60%;
-display: block;
-margin-left: auto;
-margin-right: auto;
-margin-top: 100px;
-}
-
-.aboutContent{
-  font-size: 16px;
-  line-height: 40px;
-}
-
-.aboutHeading{
-  font-size: 34px;
-}
-
-/* Hamburger mobile navigation */
-
-#menu li{
-  padding: 10px 0;
-  font-size: 16px;
-}
-
-#menu a{
-  text-decoration: none;
-  color: #232323;
-  transition: color 0.3s ease;
-  font-size: 16px;
-}
-
-#menu a:hover{
-  color:#ffffff;;
-}
-
-#menu .selected a{
-  color:#000000;
-  font-weight: bold;
-}
-
-#menuToggle{
-  display: block;
-  position: absolute;
-  top: 32px;
-  right: 26px;
-  z-index: 1000; /*this has to be at higher index than the gallery swipe hit area */
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle input{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer;
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  -webkit-touch-callout: none;
-}
-
-#menuToggle span{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #cdcdcd;
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2){
-  transform-origin: 0% 100%;
-}
-
-/* Transform hamburger into a cross*/
-
-#menuToggle input:checked ~ span{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/* Hide the middle one line */
-
-#menuToggle input:checked ~ span:nth-last-child(3){
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/* Last one should go the other direction */
-
-#menuToggle input:checked ~ span:nth-last-child(2){
-  opacity: 1;
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/* Make this absolute positioned at the top left of the screen */
-
-#menu{
-  position: absolute;
-  width: 150px;
-  margin: -100px 0 0 0;
-  padding-top: 115px;
-  padding-bottom: 20px;
-  padding-right: 30px;
-  padding-left: 30px;
-  right: -100px;
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-/* Fade in from the left */
-
-#menuToggle input:checked ~ ul{
-  transform: scale(1.0, 1.0);
-  opacity: 1;
-}
-
-/* Header */
-
-header #brandingDesktop{
-  width: 90%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  background-color:#000000;
-  padding-top:70px;
-  min-height:60px;
-  color: #808080;
-  overflow:hidden;
-}
-
-header #brandingMobile{
-  text-align: center;
-  padding-top: 20px;
-}
-
 h1{
   font-size: 60px;
   color:#808080;
@@ -272,26 +45,48 @@ a:hover{
 }
 
 p{
-  font-size: 34px;
+  font-size: 18px;
   color: #ffffff;
 }
 
-img{
+/* Branding Homepage and Contact Page*/
+
+#brandingDesktopWide{
+  width: 100%;
   display: block;
-  margin: 0 auto;
-  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background-color:#000000;
+  padding-top:40px;
+  height:160px;
+  color: #808080;
+  position: fixed;
+
+}
+
+#brandingDesktopCompactOneLine{
+  display:none;
+}
+
+#brandingDesktopCompactTwoLines{
+  display: none;
+}
+
+#brandingMobile{
+  display:none;
 }
 
 
-/* Homepage box styling */
+/* Homepage Image Boxes */
 
 .box{
   border: 1px solid #808080;
   margin-left: 2px;
   margin-right: 2px;
   background-color: #000000;
-  width: 195px;
-  height: 283px;
+  width: 195px !important;
+  height: 283px !important;
   margin-bottom: 20px;: 
 }
 
@@ -299,7 +94,7 @@ img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 6px;
+  padding-top: 230px;
   background-color: #000000;
   max-width: 1022px;
   display: -webkit-flex; /* Safari */
@@ -309,8 +104,8 @@ img{
 }
 
 .boxAndCaption{
-  height: 360px;
-  width: 195px;
+  height: 360px !important;
+  width: 195px !important;
   display: block;
   margin-left:auto;
   margin-right: auto;
@@ -322,26 +117,53 @@ img{
   font-size: 18px;
 }
 
-#aboutHomepageLink{
-  padding-top: 0px;
-  min-height: 50px;
-  text-align: center;
+
+/* Contact Page */
+
+#contactDetails {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 200px;
+  padding-top: 220px;
 }
 
-/* contact page styling */
 
-#contact{
+#contactBottom{
   padding-top: 20px;
   min-height: 50px;
   text-align: center;
 }
 
+#contactTop{
+  display: none;
+}
+
+/* About */
+
+#about{
+width: 860px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+}
+
+#about p{
+font-size: 18px;
+line-height: 26px;
+}
+
+
+/* Contact Page Navigation */
+
 #contactPageNav{
-  height: 30px;
+  height: 40px;
   display: block;
   margin-left:auto;
   margin-right:auto;
-  margin-top: 80px;
+  margin-top: 40px;
   max-width: 1022px;
   display: -webkit-flex; /* Safari */
     -webkit-flex-wrap: wrap; /* Safari 6.1+ */
@@ -351,298 +173,332 @@ img{
 
 .contactPageNavItem{
   width: 195px;
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-  text-align: center;
-}
-
-#contactTop{
-  text-align: center;
-  padding-top: 0px;
-  padding-bottom: 20px;
-}
-
-
-#contactDetails p a{
   height: 40px;
-  text-align: left;
-  font-size: 34px;
-  color:#ffffff;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  transition: color 0.3s ease;
-}
-
-#contactDetails p a:hover{
-  color:#808080;
-}
-
-/* noscript styling */ 
-
-#noscriptImageAlignment{
-  display: block;
   margin-right: auto;
   margin-left: auto;
-  width: 600px;
-  margin-top: 100px;
-}
-
-.noscriptImages{
   display: block;
-  margin-right: auto;
-  margin-left: auto;
-  width:400px;
-  padding-top: 20px;
-}
-
-.noscriptCaptions{
-  font-size: 24px;
-  text-align: center;
-  line-height: 30px;
-}
-
-/* media queries */
-
-
-@media only screen and (min-width: 240px) and (max-width: 745px){
-
-#contact{
-  display: none; 
-} 
-
-#contactDetails p a{
-  display: block;
-  height: 20px;
-  text-align: center;
-  margin-top:20px; 
-  font-size: 18px !important;
-}
-
- ul.centerBlock{
-  display: block;
-  margin-left: 0px;
-  list-style: none;
   text-align: center;
 }
 
-li.contactItem a{
-  margin-left: 0px;
-  font-size: 18px;
-  line-height: 40px;
-  color: #ffffff;
-}
 
-li.contactItem{
-  margin-left: -30px;
-  font-size: 18px;
-  line-height: 40px;
-  color:#ffffff;
-}
+/*Contact Page Phone and Email */
 
-p{
-  font-size: 18px;
-}
-
-h1{
-  font-size: 34px;
-  color:#808080;
-}
-
-h1 a{
-  font-size: 34px;
-  color:#808080;
-}
-
-h1 a:hover{
-  font-size: 34px;
-  color:#ffffff;
-}
-
-#aboutHomepageLink{
-  display: none;
-}
-}
-
-
-@media only screen and (min-width: 240px) and (max-width: 1246px){
-
-#brandingDesktop h1{
-  display: none;
-}
-
-#brandingDesktop h3{
-  display: none;
-}
-
-header #brandingDesktop{
-  padding-top:10px;
-  min-height:60px;
-  overflow:hidden;
-  text-align: center;
-}
-
-#brandingMobile {
-  padding-top: 0px !important;
-  padding-bottom: 2px;
-}
-
+/* Contact Page */
 ul.centerBlock{
   margin-left: auto;
   margin-right: auto;
+  display: block;
   list-style: none;
-  padding-top:39px; 
-  padding-bottom:21px;
-  padding-left: -40px !important];
+  text-align: center;
+  padding:0px; 
 }
-
-#contactPageNav{
-  margin-top: 80px;
-}
-
-body{
-  position: fixed !important;
-}
-}
-
-/* menu */
-
-@media only screen and (min-width: 240px) and (max-width:890px){
-
-.container{
-  height: 66px;
-}
-
-#desktop{
-    display: none;
-}
-
-#aboutContentBlock{
-margin-top: 50px;
-}
-}
-
-
-@media only screen and (min-width: 889px) and (max-width:4800px){
-
-#mobile{
-    display: none;
-}
-}
-
-
-@media only screen and (min-width: 745px) and (max-width: 850px){
-
-h1{
-  font-size: 60px;
-  margin-top: -2px;
-} 
-
-#contactTop{
-  display: none;
-}
-
-.contactPageNavItem{
-  width: 100px !important;
-  height: 40px;
-}
-}
-
-@media only screen and (min-width: 745px) and (max-width: 4000px){
-
-h1{
-  font-size: 60px;
-  margin-top: -2px;
-} 
-
-#contactTop{
-  display: none;
-}
-
-.contactPageNavItem{
-  width: 140px;
-  height: 40px;
-}
-}
-
-
-@media only screen and (min-width: 746px) and (max-width:4800px){
 
 li.contactItem {
+  height: 60px;
+  display: block;
   text-align: center;
-  font-size: 34px !important;
-  line-height: 54px;
-  color: #ffffff;
+  font-size: 34px;
+  color:#ffffff;
+  list-style: none;
+  transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 li.contactItem a{
+  height: 60px;
   text-align: center;
-  font-size: 34px !important;
-  line-height: 54px;
+  font-size: 34px;
   color:#ffffff;
+  display: block;
+  transition: color 0.3s ease;
+  text-decoration: none;
 }
+
+li.contactItem a:hover{
+  color:#808080;
 }
 
 
-@media only screen and (min-width: 1247px) and (max-width: 4000px){
+/* Media Queries */
 
-#brandingMobile h1{
+@media only screen and (min-width:1024px) and (max-width:1250px){
+
+#brandingDesktopWide{
   display: none;
 }
 
-#brandingMobile h3{
+#brandingMobile{
   display: none;
 }
 
-ul.centerBlock{
+#brandingDesktopCompactTwoLines{
+  display: none;
+}
+
+#brandingDesktopCompactOneLine{
+  width: 100%;
   display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background-color:#000000;
+  padding-top:40px;
+  height:160px;
+  color: #808080;
+  position: fixed;
+}
+
+#contactTop{
+  display:hidden;
+}
+
+#boxes{
+  padding-top: 230px;
+}
+
+/* Contact Page Phone and Email */
+
+ul.centerBlock{
   margin-left: auto;
   margin-right: auto;
   list-style: none;
-  padding-top:21px; 
-  padding-bottom:21px;
-  padding-left: -40px !important];
+  display: block;
+  padding:0px; 
 }
 }
 
 
-@media only screen and (min-width: 240px) and (max-width:744px){
+@media only screen and (min-width:741px) and (max-width: 1023px){
 
-ul.centerBlock{
+#brandingDesktopCompactOneLine{
+  display: none;
+}
+
+#brandingDesktopCompactTwoLines{
+  width: 100%;
   display: block;
-  margin-left: auto;
   margin-right: auto;
-  list-style: none;
-  padding-top:0px; 
-  padding-bottom:0px;
-  padding-left:-40px !important;
+  margin-left: auto;
+  text-align: center;
+  background-color:#000000;
+  padding-top:10px;
+  height:160px;
+  color: #808080;
+  position: fixed;
+}
+
+h1{
+  font-size: 48px;
+  color:#808080;
+}
+
+#brandingDesktopWide{
+  display: none;
+}
+
+#brandingMobile{
+  display: none;
+}
+
+#boxes{
+  padding-top: 200px;
+}
+
+/* Contact Page */
+
+#about{
+width: 560px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 40px;
+}
+
+#about p{
+font-family: 'Work Sans', sans-serif;
+line-height: 26px;
 }
 
 #contactPageNav{
+  max-width: 660px;
   margin-top: 40px;
-  max-width: 300px;
 }
 
-header #brandingDesktop{
-   min-height:20px;
+.contactPageNavItem{
+  width: 100px;
+  height: 40px;
+}
+
+/* Contact Page Phone and Email */
+
+#contactDetails{
+  height: 150px;
+}
+
+li.contactItem {
+  height: 40px;
+  font-size: 28px;
+}
+
+li.contactItem a{
+  height: 40px;
+  font-size:28px;
 }
 }
 
 
-@media only screen and (min-width: 746px) and (max-width:969px){
+@media only screen and (min-width:601px) and (max-width:740px){
 
-ul.centerBlock{
+#brandingDesktopWide{
+  display: none;
+}
+
+#brandingDesktopCompactOneLine{
+  display: none;
+}
+
+#brandingDesktopCompactTwoLines{
+  width: 100%;
   display: block;
-  margin-left: auto;
   margin-right: auto;
-  list-style: none;
-  padding-top:6px; 
-  padding-bottom:0px;
-  padding-left:-40px !important;
+  margin-left: auto;
+  text-align: center;
+  background-color:#000000;
+  padding-top:10px;
+  height:160px;
+  color: #808080;
+  position: fixed;
+}
+
+#brandingMobile{
+  display: none;
+}
+
+h1{
+  font-size: 48px;
+  color:#808080;
+}
+
+#boxes{
+  padding-top: 200px;
+}
+
+/* Contact Page */
+
+#about{
+width: 560px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 40px;
+}
+
+
+#contactPageNav{
+  max-width: 660px;
+}
+
+.contactPageNavItem{
+  width: 100px;
+  height: 40px;
+}
+
+/* Contact Page Phone and Email */
+
+#contactDetails{
+  height: 150px;
+}
+
+li.contactItem {
+  height: 40px;
+  font-size: 28px;
+}
+
+li.contactItem a{
+  height: 40px;
+  font-size:28px;
 }
 
 #contactPageNav{
-  margin-top: 80px;
+  max-width: 660px;
+  margin-top: 40px;
+}
+
+.contactPageNavItem{
+  width: 80px;
+  height: 40px;
 }
 }
+
+@media only screen and (min-width:240px) and (max-width: 600px){
+
+#brandingDesktopWide{
+  display: none;
+}
+
+#brandingDesktopCompactTwoLines{
+  display: none;
+}
+
+#brandingDesktopCompactOneLine{
+  display: none;
+}
+
+#fixedBrandingArea{
+  position: fixed
+  width:100%;
+}
+
+#brandingMobile{
+  width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -15px;
+  text-align: center;
+  background-color:#000000;
+  padding-top:30px;
+  height:105px;
+  color: #808080;
+  position: fixed;
+}
+
+h1 #brandingMobile{
+  font-size: 24px;
+}
+
+#boxes{
+  padding-top: 200px;
+}
+
+#contactBottom{
+  display: none; 
+}
+
+#contactTop{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 130px;
+  height:50px;
+  background-color: #000000;
+  position: fixed;
+} 
+
+/* Contact Page Phone and Email */
+
+#contactDetails{
+  height: 150px;
+}
+
+li.contactItem {
+  height: 40px;
+  font-size: 28px;
+}
+
+li.contactItem a{
+  height: 40px;
+  font-size:28px;
+}
+}
+
