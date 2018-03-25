@@ -403,3 +403,246 @@ img{
   line-height: 30px;
 }
 
+/* media queries */
+
+
+@media only screen and (min-width: 240px) and (max-width: 745px){
+
+#contact{
+  display: none; 
+} 
+
+#contactDetails p a{
+  display: block;
+  height: 20px;
+  text-align: center;
+  margin-top:20px; 
+  font-size: 18px !important;
+}
+
+ ul.centerBlock{
+  display: block;
+  margin-left: 0px;
+  list-style: none;
+  text-align: center;
+}
+
+li.contactItem a{
+  margin-left: 0px;
+  font-size: 18px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+li.contactItem{
+  margin-left: -30px;
+  font-size: 18px;
+  line-height: 40px;
+  color:#ffffff;
+}
+
+p{
+  font-size: 18px;
+}
+
+h1{
+  font-size: 34px;
+  color:#808080;
+}
+
+h1 a{
+  font-size: 34px;
+  color:#808080;
+}
+
+h1 a:hover{
+  font-size: 34px;
+  color:#ffffff;
+}
+
+#aboutHomepageLink{
+  display: none;
+}
+}
+
+
+@media only screen and (min-width: 240px) and (max-width: 1246px){
+
+#brandingDesktop h1{
+  display: none;
+}
+
+#brandingDesktop h3{
+  display: none;
+}
+
+header #brandingDesktop{
+  padding-top:10px;
+  min-height:60px;
+  overflow:hidden;
+  text-align: center;
+}
+
+#brandingMobile {
+  padding-top: 0px !important;
+  padding-bottom: 2px;
+}
+
+ul.centerBlock{
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  padding-top:39px; 
+  padding-bottom:21px;
+  padding-left: -40px !important];
+}
+
+#contactPageNav{
+  margin-top: 80px;
+}
+
+body{
+  position: fixed !important;
+}
+}
+
+/* menu */
+
+@media only screen and (min-width: 240px) and (max-width:890px){
+
+.container{
+  height: 66px;
+}
+
+#desktop{
+    display: none;
+}
+
+#aboutContentBlock{
+margin-top: 50px;
+}
+}
+
+
+@media only screen and (min-width: 889px) and (max-width:4800px){
+
+#mobile{
+    display: none;
+}
+}
+
+
+@media only screen and (min-width: 745px) and (max-width: 850px){
+
+h1{
+  font-size: 60px;
+  margin-top: -2px;
+} 
+
+#contactTop{
+  display: none;
+}
+
+.contactPageNavItem{
+  width: 100px !important;
+  height: 40px;
+}
+}
+
+@media only screen and (min-width: 745px) and (max-width: 4000px){
+
+h1{
+  font-size: 60px;
+  margin-top: -2px;
+} 
+
+#contactTop{
+  display: none;
+}
+
+.contactPageNavItem{
+  width: 140px;
+  height: 40px;
+}
+}
+
+
+@media only screen and (min-width: 746px) and (max-width:4800px){
+
+li.contactItem {
+  text-align: center;
+  font-size: 34px !important;
+  line-height: 54px;
+  color: #ffffff;
+}
+
+li.contactItem a{
+  text-align: center;
+  font-size: 34px !important;
+  line-height: 54px;
+  color:#ffffff;
+}
+}
+
+
+@media only screen and (min-width: 1247px) and (max-width: 4000px){
+
+#brandingMobile h1{
+  display: none;
+}
+
+#brandingMobile h3{
+  display: none;
+}
+
+ul.centerBlock{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  padding-top:21px; 
+  padding-bottom:21px;
+  padding-left: -40px !important];
+}
+}
+
+
+@media only screen and (min-width: 240px) and (max-width:744px){
+
+ul.centerBlock{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  padding-top:0px; 
+  padding-bottom:0px;
+  padding-left:-40px !important;
+}
+
+#contactPageNav{
+  margin-top: 40px;
+  max-width: 300px;
+}
+
+header #brandingDesktop{
+   min-height:20px;
+}
+}
+
+
+@media only screen and (min-width: 746px) and (max-width:969px){
+
+ul.centerBlock{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  padding-top:6px; 
+  padding-bottom:0px;
+  padding-left:-40px !important;
+}
+
+#contactPageNav{
+  margin-top: 80px;
+}
+}
