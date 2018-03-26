@@ -248,6 +248,9 @@ p{
 #desktopNavigation{
     display: none;
 }
+body {
+  position: fixed;
+}
 }
 
 @media only screen and (min-width: 821px){

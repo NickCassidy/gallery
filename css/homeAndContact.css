@@ -166,6 +166,7 @@ line-height: 26px;
   margin-right:auto;
   margin-top: 40px;
   max-width: 1022px;
+  margin-bottom: 50px;
   display: -webkit-flex; /* Safari */
     -webkit-flex-wrap: wrap; /* Safari 6.1+ */
     display: flex;
@@ -323,11 +324,13 @@ line-height: 26px;
 #contactPageNav{
   max-width: 660px;
   margin-top: 40px;
+  margin-bottom: 50px;
 }
 
 .contactPageNavItem{
   width: 100px;
   height: 40px;
+  padding-bottom: 50px;
 }
 
 /* Contact Page Phone and Email */
@@ -344,6 +347,11 @@ li.contactItem {
 li.contactItem a{
   height: 40px;
   font-size:28px;
+}
+#mobilePadding{
+  display: block;
+  height: 50px;
+  width: 100%;
 }
 }
 
@@ -407,6 +415,7 @@ margin-top: 40px;
 
 #contactPageNav{
   max-width: 660px;
+  margin-bottom: 50px;
 }
 
 .contactPageNavItem{
@@ -433,12 +442,19 @@ li.contactItem a{
 #contactPageNav{
   max-width: 660px;
   margin-top: 40px;
+  margin-bottom: 50px;
 }
 
 .contactPageNavItem{
   width: 80px;
   height: 40px;
 }
+#mobilePadding{
+  display: block;
+  height: 50px;
+  width: 100%;
+}
+
 }
 
 @media only screen and (min-width:240px) and (max-width:600px){
@@ -509,16 +525,19 @@ h1 a:hover{
 #contactDetails{
   height: 150px;
   padding-top: 160px;
+  width: 100%;
 }
 
 li.contactItem {
-  height: 40px;
-  font-size: 24px;
+  line-height: 40px;
+  font-size: 20px;
+  white-space: nowrap !important;
 }
 
 li.contactItem a{
-  height: 40px;
-  font-size:24px;
+  line-height: 40px;
+  font-size:20px;
+  white-space: nowrap !important;
 }
 
 #about{
