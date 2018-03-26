@@ -27,7 +27,7 @@
         <meta property="og:image:width" content="372"/>
         <meta property="og:image:height" content="537"/>
         <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin/>
-        <link rel="stylesheet" href="../css/common.css" type="text/css" />
+        <link rel="stylesheet" href="../css/gallery.css" type="text/css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:700"> 
         <link rel="icon" href="../favicon.ico">
@@ -459,16 +459,14 @@
         </script>
     </head>
     <body>
-		<header id="alignWithNav">
-            <div class="container">
+		<header>
                 <div id="brandingGalleries">
                     <h1><a href="../">SIMON TURTLE</a></h1>
                 </div>
         </header>
-
-        <header id="desktop">   
-            <nav id="topnav">
-                <ul id="topnavlist">
+        <header>   
+            <nav id="desktopNavigation">
+                <ul id="desktopNavigationItems">
                     <li><a href="../portfolio/">Portfolio</a></li>
                     <li><a href="../portraits/">Portraits</a></li>
                     <li class="current"><a href="#">Archive</a></li>
@@ -479,11 +477,8 @@
                 </ul>
             </nav>
         </header>
-
-
-        <header id="mobile">
-            <nav>
-
+        <header>
+            <nav id="mobileNavigation">
                 <div id="menuToggle">
                     <input type="checkbox" />
                         <span></span>

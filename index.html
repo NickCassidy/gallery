@@ -28,7 +28,7 @@
         	<meta property="og:image" content="https://www.simonturtle.com/images/jsonldImage/lionking.jpg"/>
         	<meta property="og:image:width" content="372"/>
         	<meta property="og:image:height" content="537"/>
-			<link rel="stylesheet" href="./css/home.css">
+			<link rel="stylesheet" href="./css/homeAndContact.css">
 			<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin/>
 			<link href="https://fonts.googleapis.com/css?family=Work+Sans:600" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Work+Sans:700" rel="stylesheet">
@@ -100,22 +100,31 @@
 	</head>
 	<body>
 			<header>
-					<div id="brandingDesktop">
+				<div id="fixedBrandingArea">
+					<div id="brandingDesktopWide">
 						<h1>SIMON TURTLE<span style="padding-left:80px"></span>PHOTOGRAPHER</h1>
 					</div>
-					<div id="brandingMobile">
+					<div id="brandingDesktopCompactOneLine">
 						<h1>SIMON TURTLE PHOTOGRAPHER</h1>
 					</div>
+					<div id="brandingDesktopCompactTwoLines">
+						<h1>SIMON TURTLE<br /> PHOTOGRAPHER</h1>
+					</div>
+					<div id="contactTop"><h2><a href="contact/">Contact</a></h2></div>
+					<div id="brandingMobile">
+						<h1>SIMON TURTLE<br /> PHOTOGRAPHER</h1>
+					</div>
+				</div>
 			</header>
-						<h2 id="contactTop"><a href="contact/">Contact</a></h2>
-				<section id="boxes">
+				<section>
+					<div id="boxes">
 						<div class="boxAndCaption">
 								<a href="portfolio/">
 										<div class="box">
 											<picture>
-												<source media="(min-width: 1025px)" srcset="./images/home/lionking-398w.jpg">
+												<source media="(min-width: 400px)" srcset="./images/home/lionking-398w.jpg">
 												<source media="(min-width: 240px)" srcset="./images/home/lionking-195w.jpg">
-												<img src="#" alt="Lionking" style="width:auto;">
+												<img src="#" alt="Lionking" style="width:195px;">
 											</picture>
 										</div>
 										<h2 class="caption">Portfolio</h2>        
@@ -126,9 +135,9 @@
 								<a href="portraits/">
 										<div class="box">
 											<picture>
-														<source media="(min-width: 1025px)" srcset="./images/home/fs-398w.jpg">
+											<source media="(min-width: 400px)" srcset="./images/home/fs-398w.jpg">
 											<source media="(min-width: 240px)" srcset="./images/home/fs-195w.jpg">
-											<img src="#" alt="French and Saunders" style="width:auto;">
+											<img src="#" alt="French and Saunders" style="width:195px;">
 									 </picture>
 										</div>
 										<h2 class="caption">Portraits</h2>  
@@ -139,9 +148,9 @@
 								<a href="archive/">	
 										<div class="box">
 											<picture>
-													<source media="(min-width: 1025px)" srcset="./images/home/oac-398w.jpg">
+												<source media="(min-width: 400px)" srcset="./images/home/oac-398w.jpg">
 												<source media="(min-width: 240px)" srcset="./images/home/oac-195w.jpg">
-												<img src="#" alt="Once a Catholic" style="width:auto;">
+												<img src="#" alt="Once a Catholic" style="width:195px;">
 											</picture>           	
 										</div>
 										<h2 class="caption">Archive</h2>   
@@ -152,9 +161,9 @@
 								<a href="posters/">
 										<div class="box">
 											<picture>
-													<source media="(min-width: 1025px)" srcset="./images/home/equus-398w.jpg">
+													<source media="(min-width: 400px)" srcset="./images/home/equus-398w.jpg">
 													<source media="(min-width: 240px)" srcset="./images/home/equus-195w.jpg">
-													<img src="#" alt="Equus" style="width:auto;">
+													<img src="#" alt="Equus" style="width:195px;">
 												</picture>
 										</div>
 										<h2 class="caption">Posters</h2>  
@@ -165,17 +174,17 @@
 								<a href="ella/">
 										<div class="box">
 											<picture>
-											<source media="(min-width: 1025px)" srcset="./images/home/ella-398w.jpg">
+											<source media="(min-width: 400px)" srcset="./images/home/ella-398w.jpg">
 											<source media="(min-width: 240px)" srcset="./images/home/ella-195w.jpg">
-											<img src="#" alt="Ella" style="width:auto;">
+											<img src="#" alt="Ella" style="width:195px;">
 									 </picture>
 										</div>
 										<h2 class="caption">Ella</h2> 
 								</a>
-						</div>                        
-					</section>
-		<h2 id="contact"><a href="contact/">Contact</a></h2>
-		<h2 id="aboutHomepageLink"><a href="about/">About</a></h2>
+						</div> 
+					</div>	
+				</section>
+		<div id="contactBottom"><h2><a href="contact/">Contact</a></h2></div>
 	<!--register service worker-->
 	<script>
   		document.addEventListener('DOMContentLoaded', init, false);
