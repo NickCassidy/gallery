@@ -197,7 +197,6 @@ ul.centerBlock{
 
 li.contactItem {
   height: 60px;
-  display: block;
   text-align: center;
   font-size: 34px;
   color:#ffffff;
@@ -211,7 +210,6 @@ li.contactItem a{
   text-align: center;
   font-size: 34px;
   color:#ffffff;
-  display: block;
   transition: color 0.3s ease;
   text-decoration: none;
 }
@@ -525,19 +523,17 @@ h1 a:hover{
 #contactDetails{
   height: 150px;
   padding-top: 160px;
-  width: 100%;
 }
 
 li.contactItem {
-  line-height: 40px;
+  line-height: 20px;
   font-size: 20px;
-  white-space: nowrap !important;
+  height: 50px;
 }
 
 li.contactItem a{
-  line-height: 40px;
+  line-height: 20px;
   font-size:20px;
-  white-space: nowrap !important;
 }
 
 #about{
@@ -562,12 +558,11 @@ ul.centerBlock{
 }
 
 .contactPageNavItem{
-  width: 195px;
-  height: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-  text-align: center;
+  height:20px;
+}
+
+#contactPageNav{
+  height: 130px;
 }
 }
 
