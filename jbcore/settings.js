@@ -20,7 +20,6 @@
 				autohideThumbs: "false",
 				buttonBarPosition: "top",
 				showThumbsOnLoad:"true",
-				thumbFrameWidth:"0",
 				showExpandGalleryButton: "false",
 				showOpenButton: "false",
 				showExpandButton:"false",

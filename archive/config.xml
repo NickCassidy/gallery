@@ -6,39 +6,80 @@
 	thumbURL="../images/archive/thumbs/Equus.jpg"
 	linkURL="#"
 	linkTarget="_blank">
-    <title></title>
    	<caption>Ade Edmondson and Rik Mayall</caption>
+    <title></title>
     <index>1</index>
-    <about>sfsfs</about>
-    <creator>sfasfsd</creator>
-    <copyright>afasfasdf</copyright>
-    <locationCreated>sfasfsad</locationCreated>
-    <sourceOrganisation>sfasdfsafa</sourceOrganisation>
-    <url>sfsaf</url>
+    <about>Texas</about>
+    <text>Texas, USA</text>
+    <creator>Simon Turtle</creator>
+    <copyrightYear>1990</copyrightYear>
+    <copyrightHolder>Simon Turtle</copyrightHolder>
     <dateCreated>2018-03-01</dateCreated>
+    <isFamilyFriendly>true</isFamilyFriendly>
+    <editor>Simon Turtle</editor>
+    <locationCreated>Utopia, Texas</locationCreated>
+    <sourceOrganisation>Personal</sourceOrganisation>
+    <thumbnailURL>https://www.simonturtle.com/images/archive/thumbs/Equus.jpg</thumbnailURL>
+    <url>https://www.simonturtle.com/images/archive/thumbs/Equus.jpg</url>
   </image>
 <image imageURL="../images/archive/Equus.jpg"
   thumbURL="../images/archive/thumbs/Equus.jpg"
 	linkURL="#"
 	linkTarget="_blank">
+    <caption>Billy Goat</caption>
     <title></title>
-   	<caption>Ade Edmondson and Rik Mayall</caption>
-  <index>2</index>
+    <index>2</index>
+    <about>Barnsley</about>
+    <text>Cornwall, UK</text>
+    <creator>Simon Turtle</creator>
+    <copyrightYear>1992</copyrightYear>
+    <copyrightHolder>Simon Turtle</copyrightHolder>
+    <dateCreated>2017-01-01</dateCreated>
+    <isFamilyFriendly>true</isFamilyFriendly>
+    <editor>Simon Turtle</editor>
+    <locationCreated>Peckham, London</locationCreated>
+    <sourceOrganisation>Personal</sourceOrganisation>
+    <thumbnailURL>https://www.simonturtle.com/images/archive/thumbs/Equus.jpg</thumbnailURL>
+    <url>https://www.simonturtle.com/images/archive/thumbs/Equus.jpg</url>
   </image>
 <image imageURL="../images/archive/Equus.jpg"
   thumbURL="../images/archive/thumbs/Equus.jpg"
 	linkURL="#"
 	linkTarget="_blank">
+    <caption>Ade Edmondson and Rik Mayall</caption>
     <title></title>
-   	<caption>Ade Edmondson and Rik Mayall</caption>
-  <index>3</index>
+    <index>3</index>
+    <about>Texas</about>
+    <text>Texas, USA</text>
+    <creator>Simon Turtle</creator>
+    <copyrightYear>1990</copyrightYear>
+    <copyrightHolder>Simon Turtle</copyrightHolder>
+    <dateCreated>2018-03-01</dateCreated>
+    <isFamilyFriendly>true</isFamilyFriendly>
+    <editor>Simon Turtle</editor>
+    <locationCreated>Utopia, Texas</locationCreated>
+    <sourceOrganisation>Personal</sourceOrganisation>
+    <thumbnailURL>https://www.simonturtle.com/images/archive/thumbs/Equus.jpg</thumbnailURL>
+    <url>https://www.simonturtle.com/images/archive/thumbs/Equus.jpg</url>
   </image>
 <image imageURL="../images/archive/Equus.jpg"
   thumbURL="../images/archive/thumbs/Equus.jpg"
 	linkURL="#"
 	linkTarget="_blank">
+    <caption>Ade Edmondson and Rik Mayall</caption>
     <title></title>
-   	<caption>Ade Edmondson and Rik Mayall</caption>
-  <index>4</index>
+    <index>4</index>
+    <about>Texas</about>
+    <text>Texas, USA</text>
+    <creator>Simon Turtle</creator>
+    <copyrightYear>1990</copyrightYear>
+    <copyrightHolder>Simon Turtle</copyrightHolder>
+    <dateCreated>2018-03-01</dateCreated>
+    <isFamilyFriendly>true</isFamilyFriendly>
+    <editor>Simon Turtle</editor>
+    <locationCreated>Utopia, Texas</locationCreated>
+    <sourceOrganisation>Personal</sourceOrganisation>
+    <thumbnailURL>https://www.simonturtle.com/images/archive/thumbs/Equus.jpg</thumbnailURL>
+    <url>https://www.simonturtle.com/images/archive/thumbs/Equus.jpg</url>
   </image>
 </juiceboxgallery>
