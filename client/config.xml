@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <juiceboxgallery
-	galleryCaption="Juicebox-Pro Gallery"
->
+	galleryCaption="Juicebox-Pro Gallery">
   <image imageURL="../images/client/suarez.jpg"
 	thumbURL="../images/client/thumbs/The Producers.jpg"
 	linkURL="#"

@@ -2,7 +2,7 @@
 <html lang="en"><!-- Archive page -->
     <head>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17355854-1"></script> -->
+        <?php include "../googleJs.php"; ?>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -14,25 +14,26 @@
         <link rel="manifest" href="../manifest/manifest.json">
 		<meta name="viewport" id="jb-viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=0"/>
 
-        <title>Simon Turtle - Photographer | Archive</title>
+        <title>Simon Turtle - Celebrity Photographer | Archive</title>
 
-		<meta name="description" content="The portfolio site of Simon Turtle, a London based people and portrait photographer specialising in actors, celebrities, comedians and theatre advertising.">
+		<meta name="description" content="Photography archive of London based celebrity photographer, Simon Turtle. People and portrait photographs specialising in actors, celebrities, comedians and theatre advertising">
         <meta name="author" content="Simon Turtle">
         <meta property="og:site_name" content="Simon Turtle"/>
         <meta property="og:title" content="Celebrity Photographer London - Simon Turtle"/>
         <meta property="og:url" content="https://www.simonturtle.com/"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:description" content="Simon Turtle is a London based Photographer specialising in Celebrity Portraits, Theatre Advertising, Musicians, Actors, Comedians, Editorial Features and TV Promotion."/>
+        <meta property="og:description" content="Simon Turtle is a London based photographer specialising in theatre advertising photographs, photographs of celebrities, musicians, actors, comedians, editorial Features and TV promotion"/>
         <meta property="og:image" content="https://www.simonturtle.com/images/jsonldImage/lionking.jpg"/>
         <meta property="og:image:width" content="372"/>
         <meta property="og:image:height" content="537"/>
+        <link rel="manifest" href="../manifest/manifest.json">
         <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin/>
         <link rel="stylesheet" href="../css/gallery.css" type="text/css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:700"> 
         <link rel="icon" href="../favicon.ico">
         <script type="application/ld+json">
-         <?php include "jsonLdList.php"; ?>
+         <?php include "injectJsonLd.php"; ?>
         </script>
     </head>
     <body>

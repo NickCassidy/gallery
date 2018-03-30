@@ -1,90 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<juiceboxgallery
-	galleryCaption="Juicebox-Pro Gallery"
->
-  <image imageURL="../images/ella/suarez.jpg"
-	thumbURL="../images/ella/thumbs/The Producers.jpg"
+<juiceboxgallery>
+  <image imageURL="../images/ella/Dad.jpg"
+	thumbURL="../images/ella/thumbs/Dad.jpg"
+	llinkURL="#"
+linkTarget="_blank">
+	<title></title>
+    <caption></caption>
+  </image>
+  <image imageURL="../images/ella/Party-Tree.jpg"
+	thumbURL="../images/ella/thumbs/Party-Tree.jpg"
 	linkURL="#"
-	linkTarget="_blank">
-    <title></title>
-   	<caption>Caption 1 Caption 1 Caption 1 Caption 1 Caption 1</caption>
+linkTarget="_blank">
+	<title></title>
+   	<caption></caption>
   </image>
-  <image imageURL="../images/ella/lionking.jpg"
-	thumbURL="../images/ella/thumbs/Andile Gumbi - Lion King.jpg"
+  <image imageURL="../images/ella/Ella-Evie.jpg"
+	thumbURL="../images/ella/thumbs/Ella-Evie.jpg"
 	linkURL="#"
-	linkTarget="_blank">
-    <title></title>
-    <caption>Caption 2</caption>
-  </image>
-  <image imageURL="../images/ella/suarez.jpg"
-	thumbURL="../images/ella/thumbs/Dane Hurst and Camille Bracher - Inala.jpg"
-	linkURL="../images/wide.jpg"
-	linkTarget="_blank">
+linkTarget="_blank">
 	<title></title>
-    <caption>Caption 3</caption>
+    <caption></caption>
   </image>
-  <image imageURL="../images/ella/equus.jpg"
-	thumbURL="../images/ella/thumbs/Equus.jpg"
+  <image imageURL="../images/ella/Ballet.jpg"
+	thumbURL="../images/ella/thumbs/Ballet.jpg"
 	linkURL="#"
-	linkTarget="_blank">
+linkTarget="_blank">
 	<title></title>
-    <caption>Caption 4</caption>
+    <caption></caption>
   </image>
-  <image imageURL="../images/ella/suarez.jpg"
-	thumbURL="../images/ella/thumbs/Gemma Arterton - Nell Gwynn.jpg"
-	linkURL="../images/wide.jpg"
-	linkTarget="_blank">
-	<title></title>
-    <caption>Caption 5</caption>
-  </image>
-  <image imageURL="../images/ella/hug.jpg"
-	thumbURL="../images/ella/thumbs/Harry Melling.jpg"
+  <image imageURL="../images/ella/Thailand.jpg"
+	thumbURL="../images/ella/thumbs/Thailand.jpg"
 	linkURL="#"
-	linkTarget="_blank">
+linkTarget="_blank">
 	<title></title>
-	<caption>Caption 6</caption>
+    <caption></caption>
   </image>
-  <image imageURL="images/ella/suarez.jpg"
-	thumbURL="images/ella/thumbs/Henry Goodman - Looking at Lucian.jpg"
-	linkURL="images/wide.jpg"
-	linkTarget="_blank">
+  <image imageURL="../images/ella/Tate.jpg"
+	thumbURL="../images/ella/thumbs/Tate.jpg"
+	linkURL="#"
+linkTarget="_blank">
 	<title></title>
-	<caption>Caption 7</caption>
+    <caption></caption>
   </image>
-  <image imageURL="images/ella/cross.jpg"
-	thumbURL="images/ella/thumbs/Heroes-and-Bonnie-2.jpg"
-	linkURL="images/tall.jpg"
-	linkTarget="_blank">
+  <image imageURL="../images/ella/Pottery.jpg"
+	thumbURL="../images/ella/thumbs/Pottery.jpg"
+	linkURL="#"
+linkTarget="_blank">
 	<title></title>
-    <caption>Caption 8</caption>
+    <caption></caption>
   </image>
-  <image imageURL="images/ella/suarez.jpg"
-	thumbURL="images/ella/thumbs/John Simm.jpg"
-	linkURL="images/wide.jpg"
-	linkTarget="_blank">
+  <image imageURL="../images/ella/Ella-Grace.jpg"
+	thumbURL="../images/ella/thumbs/Ella-Grace.jpg"
+	linkURL="#"
+linkTarget="_blank">
 	<title></title>
-    <caption>Caption 9</caption>
+    <caption></caption>
   </image>
-   <image imageURL="images/ella/ella.jpg"
-	thumbURL="images/ella/thumbs/Katherine Parkinson Steve Pemberton Ralf Little Emily Berrington and Rufus Jones - Dead Funny.jpg"
-	linkURL="images/tall.jpg"
-	linkTarget="_blank">
+  <image imageURL="../images/ella/Sofa.jpg"
+	thumbURL="../images/ella/thumbs/Sofa.jpg"
+	linkURL="#"
+linkTarget="_blank">
 	<title></title>
-    <caption>Caption 10</caption>
+    <caption></caption>
   </image>
- <image imageURL="images/ella/suarez.jpg"
-	thumbURL="images/ella/thumbs/Kelly Osbourne - Chicago.jpg"
-	linkURL="images/wide.jpg"
-	linkTarget="_blank">
+  <image imageURL="../images/ella/Ella-Sunday.jpg"
+	thumbURL="../images/ella/thumbs/Ella-Sunday.jpg"
+	linkURL="#"
+linkTarget="_blank">
 	<title></title>
-    <caption>Caption 11</caption>
+    <caption></caption>
   </image>
-  <image imageURL="images/ella/wide.jpg"
-	thumbURL="images/ella/thumbs/Laurence Fox - The Real Thing.jpg"
-	linkURL="images/tall.jpg"
-	linkTarget="_blank">
+  <image imageURL="../images/ella/Fireworks.jpg"
+	thumbURL="../images/ella/thumbs/Fireworks.jpg"
+	linkURL="#"
+linkTarget="_blank">
 	<title></title>
-    <caption>Caption 12</caption>
+    <caption></caption>
+  </image>
+  <image imageURL="../images/ella/Ella-Sandy.jpg"
+	thumbURL="../images/ella/thumbs/Ella-Sandy.jpg"
+	linkURL="#"
+linkTarget="_blank">
+	<title></title>
+    <caption></caption>
+  </image>
+  <image imageURL="../images/ella/Ella-Fairy.jpg"
+	thumbURL="../images/ella/thumbs/Ella-Fairy.jpg"
+	linkURL="#"
+linkTarget="_blank">
+	<title></title>
+    <caption></caption>
+  </image>
+  <image imageURL="../images/ella/Ella-Phonebox.jpg"
+	thumbURL="../images/ella/thumbs/Ella-Phonebox.jpg"
+	linkURL="#"
+linkTarget="_blank">
+	<title></title>
+    <caption></caption>
+  </image>
+  <image imageURL="../images/ella/Lucy-Poppy.jpg"
+	thumbURL="../images/ella/thumbs/Lucy-Poppy.jpg"
+	llinkURL="#"
+linkTarget="_blank">
+	<title></title>
+    <caption></caption>
+  </image>
+  <image imageURL="../images/ella/Ella-Maddie.jpg"
+	thumbURL="../images/ella/thumbs/Ella-Maddie.jpg"
+	linkURL="#"
+linkTarget="_blank">
+	<title></title>
+    <caption></caption>
+  </image>
+  <image imageURL="../images/ella/Ella-Frida.jpg"
+	thumbURL="../images/ella/thumbs/Ella-Frida.jpg"
+	linkURL="#"
+linkTarget="_blank">
+	<title></title>
+    <caption></caption>
+  </image>
+  <image imageURL="../images/ella/Ella-Scissorhands.jpg"
+	thumbURL="../images/ella/thumbs/Ella-Scissorhands.jpg"
+	linkURL="#"
+linkTarget="_blank">
+	<title></title>
+    <caption></caption>
+  </image>
+  <image imageURL="../images/ella/Halloween.jpg"
+	thumbURL="../images/ella/thumbs/Halloween.jpg"
+	linkURL="#"
+linkTarget="_blank">
+	<title></title>
+    <caption></caption>
   </image>
 </juiceboxgallery>

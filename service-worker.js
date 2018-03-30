@@ -41,26 +41,30 @@ self.addEventListener('fetch', function(evt) {
 function precache() {
   return caches.open(CACHE).then(function (cache) {
     return cache.addAll([
-        'index.html',
+        'index.php',
         './portfolio/index.php',
         './portfolio/config.xml',
-        './portfolio/noscript.php',
         './portraits/index.php',
         './portraits/config.xml',
-        './portraits/noscript.php',
         './posters/index.php',
         './posters/config.xml',
-        './posters/noscript.php',
         './archive/index.php',
         './archive/config.xml',
-        './archive/noscript.php',
         './ella/index.php',
         './ella/config.xml',
-        './ella/noscript.php',
-        './css/common.css',
-        './css/about.css',
-        './css/home.css',
-        './css/theme.css'
+        './css/gallery.css',
+        './css/homeAndContact.css',
+        './css/theme.css',
+        './images/home/lionking-398w.jpg',
+        './images/home/lionking-195w.jpg',
+        './images/home/fs-398w.jpg',
+        './images/home/fs-195w.jpg',
+        './images/home/oac-398w.jpg',
+        './images/home/oac-195w.jpg',
+        './images/home/equus-398w.jpg',
+        './images/home/equus-195w.jpg',
+        './images/home/ella-398w.jpg',
+        './images/home/ella-195w.jpg'
 
 
     ]);

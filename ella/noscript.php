@@ -4,7 +4,7 @@
 
     $imgpath = 'https://www.simonturtle.com';  // The path to the gallery 
 
-    $altmaxchars = "50";   // The maximum characters of the ALT tag taken from the caption 
+    $altmaxchars = "250";   // The maximum characters of the ALT tag taken from the caption 
  
     $doc = new DOMDocument();
 
@@ -14,7 +14,8 @@
  
     $images = $doc->getElementsByTagName("image");
 
-    $index = $doc->getElementsByTagName("index");
+    // set initial value for tabindex
+    $i=0;
 
 print "<div id=\"noscriptImageAlignment\">\n";
 
@@ -34,10 +35,8 @@ print "<div id=\"noscriptImageAlignment\">\n";
   
         $altcaption = substr($caption, 0, $altmaxchars);
 
-        /* retrieve index number for each image for tabindexing */ 
-        $indexes = $image->getElementsByTagName('index');
-
-        $i = $indexes->item(0)->nodeValue;
+        // increment tabindex on each loop 
+        $i == $i++; 
 
         $pos = strrpos($altcaption, " ");    
 
@@ -46,7 +45,8 @@ print "<div id=\"noscriptImageAlignment\">\n";
             $altcaption = substr($altcaption, 0, $pos);
 
                 }
-        
+ 
+
 print "          <img src=\"$imgpath/$largephoto\" alt=\"$altcaption\" class=\"noscriptImages\" tabindex=\"$i\"/><p class=\"noscriptCaptions\">$caption</p>\n";
 
     }
