@@ -59,7 +59,7 @@
     								"address": 
     									{
     										"@type": "PostalAddress",
-    										"addressLocality":"Brixton, SW2",
+    										"addressLocality":"Soho",
     										"addressRegion": "London, UK"
     									},
   									"description": "The portfolio site of Simon Turtle, a London based people and portrait photographer specialising in actors, celebrities, comedians and theatre advertising.",
@@ -67,8 +67,8 @@
   									"name": "Simon Turtle - Photographer",
   									"telephone": "+44 (0) 7973 229 743",
   									"email": "mail@simonturtle.com",
-  									"hasMap": "https://www.google.co.uk/maps/place/Brixton,+London/@51.4588572,-0.1272725,14z/data=!3m1!4b1!4m5!3m4!1s0x487604393204f5d1:0xd929bf8f7af6c791!8m2!3d51.4612794!4d-0.1156148",
-  									"openingHours": "Mo,Tu,We,Th,Fr 09:00-17:00", 			
+  									"hasMap": "https://www.google.co.uk/maps/place/Soho,+London/@51.5131701,-0.1399518,16z/data=!3m1!4b1!4m5!3m4!1s0x487604d49f4b7f9b:0xe44e57cc537e5dd2!8m2!3d51.5136143!4d-0.1365486",
+  									"openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-24:00", 			
   									"sameAs":
                     				[
                       					"https://en-gb.facebook.com/public/Simon-Turtle", 
@@ -123,7 +123,7 @@
 											<picture>
 												<source media="(min-width: 400px)" srcset="./images/home/lionking-398w.jpg">
 												<source media="(min-width: 240px)" srcset="./images/home/lionking-195w.jpg">
-												<img src="#" alt="Lionking" style="width:195px;">
+												<img src="#" alt="Lionking" style="width:100%;">
 											</picture>
 										</div>
 										<h2 class="caption">Portfolio</h2>        
@@ -136,7 +136,7 @@
 											<picture>
 											<source media="(min-width: 400px)" srcset="./images/home/fs-398w.jpg">
 											<source media="(min-width: 240px)" srcset="./images/home/fs-195w.jpg">
-											<img src="#" alt="French and Saunders" style="width:195px;">
+											<img src="#" alt="French and Saunders" style="width:100%;">
 									 </picture>
 										</div>
 										<h2 class="caption">Portraits</h2>  
@@ -149,7 +149,7 @@
 											<picture>
 												<source media="(min-width: 400px)" srcset="./images/home/oac-398w.jpg">
 												<source media="(min-width: 240px)" srcset="./images/home/oac-195w.jpg">
-												<img src="#" alt="Once a Catholic" style="width:195px;">
+												<img src="#" alt="Once a Catholic" style="width:100%;">
 											</picture>           	
 										</div>
 										<h2 class="caption">Archive</h2>   
@@ -162,7 +162,7 @@
 											<picture>
 													<source media="(min-width: 400px)" srcset="./images/home/equus-398w.jpg">
 													<source media="(min-width: 240px)" srcset="./images/home/equus-195w.jpg">
-													<img src="#" alt="Equus" style="width:195px;">
+													<img src="#" alt="Equus" style="width:100%;">
 												</picture>
 										</div>
 										<h2 class="caption">Posters</h2>  
@@ -175,7 +175,7 @@
 											<picture>
 											<source media="(min-width: 400px)" srcset="./images/home/ella-398w.jpg">
 											<source media="(min-width: 240px)" srcset="./images/home/ella-195w.jpg">
-											<img src="#" alt="Ella" style="width:195px;">
+											<img src="#" alt="Ella" style="width:100%;">
 									 </picture>
 										</div>
 										<h2 class="caption">Ella</h2> 
