@@ -1,4 +1,4 @@
-/*v2*/
+/*v3*/
 
 body{
   color:#ffffff;
@@ -225,7 +225,11 @@ li.contactItem a:hover{
 @media only screen and (min-width:2050px){
 
 h1{
-  font-size: 90px;
+  font-size: 124px;
+}
+
+#boxes{
+  padding-top: 14%;
 }
 
 .box{
@@ -236,12 +240,20 @@ h1{
 }
 
 #boxes{
-  max-width: 2000px;
+  max-width: 2040px;
 }
 
 .boxAndCaption{
   height: 650px !important;
   width: 400px !important;
+}
+
+#contactBottom {
+  padding-top: 5%;
+}
+
+#contactDetails {
+  padding-top: 12%;
 }
 }
 
