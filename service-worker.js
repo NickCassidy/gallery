@@ -1,4 +1,3 @@
-var CACHE = 'network-or-cache';
 
 
 //first section invokes workbox js file which is configured to scan for jpg files for them to be cached
@@ -8,40 +7,54 @@ var CACHE = 'network-or-cache';
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.0.0/workbox-sw.js');
 
 if (workbox) {
-  console.log(`Yay! Workbox is loaded 🎉`);
+  console.log(`Yup! Workbox is loaded 🎉`);
 } else {
   console.log(`Boo! Workbox didn't load 😬`);
 }
 
 
 workbox.routing.registerRoute(
-  new RegExp('.*\.jpg'),
-  workbox.strategies.networkFirst()
+  /\.(?:png|gif|jpg|jpeg|svg)$/,
+  workbox.strategies.cacheFirst({
+    cacheName: 'images',
+    plugins: [
+      new workbox.expiration.Plugin({
+        maxEntries: 200,
+        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+      }),
+    ],
+  }),
 );
 
-//end of workbox jpg file caching
+workbox.routing.registerRoute(
+  /\.(?:js|css|php|json)$/,
+  workbox.strategies.staleWhileRevalidate({
+    cacheName: 'static-resources',
+  }),
+);
+
+
+
 
 //start of service worker
-//https://developers.google.com/web/fundamentals/codelabs/offline/ 
+//https://blog.angular-university.io/service-workers/
 
-self.addEventListener('install', function(evt) {
-  console.log('The service worker is being installed.');
+const VERSION = 'v1';
 
-evt.waitUntil(precache());
-});
 
-self.addEventListener('fetch', function(evt) {
-  console.log('The service worker is serving the asset.');
+self.addEventListener('install', event => event.waitUntil(installServiceWorker()));
 
- evt.respondWith(fromNetwork(evt.request, 400).catch(function () {
-    return fromCache(evt.request);
-  }));
-});
 
-function precache() {
-  return caches.open(CACHE).then(function (cache) {
+async function installServiceWorker() {
+
+    log("Service Worker installation started ");
+
+    const cache = await caches.open(getCacheName());
+
     return cache.addAll([
+        '/',
         'index.php',
+        './manifest/manifest.json',
         './portfolio/index.php',
         './portfolio/config.xml',
         './portraits/index.php',
@@ -66,29 +79,59 @@ function precache() {
         './images/home/ella-398w.jpg',
         './images/home/ella-195w.jpg'
 
-
     ]);
-  });
 }
 
-function fromNetwork(request, timeout) {
-  return new Promise(function (fulfill, reject) {
+self.addEventListener('activate', () => activateSW());
 
- var timeoutId = setTimeout(reject, timeout);
 
- fetch(request).then(function (response) {
-      clearTimeout(timeoutId);
-      fulfill(response);
+async function activateSW() {
 
-      }, reject);
-  });
-}
+    log('Service Worker activated');
 
-function fromCache(request) {
-  return caches.open(CACHE).then(function (cache) {
-    return cache.match(request).then(function (matching) {
-      return matching || Promise.reject('no-match');
+    const cacheKeys = await caches.keys();
+
+    cacheKeys.forEach(cacheKey => {
+        if (cacheKey !== getCacheName() ) {
+            caches.delete(cacheKey);
+        }
     });
-  });
+
 }
 
+
+self.addEventListener('fetch', event => event.respondWith(cacheThenNetwork(event)));
+
+
+async function cacheThenNetwork(event) {
+
+    const cache = await caches.open(getCacheName());
+
+    const cachedResponse = await cache.match(event.request);
+
+    if (cachedResponse) {
+        log('Serving From Cache: ' + event.request.url);
+        return cachedResponse;
+    }
+
+    const networkResponse = await fetch(event.request);
+
+    log('Calling network: ' + event.request.url);
+
+    return networkResponse;
+
+}
+
+function getCacheName() {
+    return "app-cache-" + VERSION;
+}
+
+
+function log(message, ...data) {
+    if (data.length > 0) {
+        console.log(VERSION, message, data);
+    }
+    else {
+        console.log(VERSION, message);
+    }
+}

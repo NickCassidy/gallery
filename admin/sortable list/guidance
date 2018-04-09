@@ -1,0 +1,51 @@
+Dynamic Drag’n Drop With jQuery And PHP
+APRIL 8, 2009  BROWSING  214 comments
+194°				
+After publishing ScheduledTweets yesterday, I received e-mails asking "how the drag'n drop & saving the new positions to the database was working".
+
+Drag'n drop generally looks hard-to-apply but it is definitely not by using JavaScript frameworks. Here is, how it is done by using jQuery & jQuery UI:
+
+jQuery Drag'n DropjQuery Drag'n Drop DemoDownload
+
+The Database:
+We create a simple database as below:
+
+jQuery Drag'n Drop Database
+
+The most important column in the database is recordListingID which shows us the order of the records.
+
+This feature can be applied to any table by adding such a column to it.
+
+The HTML:
+We'll be using an unordered list that is generated from a PHP query that lists the items according to the recordListingID value mentioned above.
+
+Here it is:
+
+[sourcecode language=”php”]
+
+ 
+[/sourcecode] 
+
+The JavaScript:
+We will be using jQuery UI's sortable plugin.
+
+[sourcecode language=”javascript”] [/sourcecode]
+
+We made the unordered list inside #contentLeft a sortable item, used the serialize function of jQuery to create the array and posted it to updateDB.php.
+
+The PHP:
+After posting the array of "new order of the items" to updateDB.php, we must run a query to update our database that will reflect the last positions of every item:
+
+[sourcecode language=”php”]
+‘; print_r($updateRecordsArray); echo ‘
+
+‘;
+echo ‘If you refresh the page, you will see that records will stay just as you modified.’;
+}
+?>
+[/sourcecode]
+
+You can see that this is the easiest part. We handled the array as $updateRecordsArray and used it inside a for each statement.
+
+With a new variable named $listingCounter, while the for each statement runs, we have updated the values of recordListingID column of every item in the database with $listingCounter values. And that's it.
+

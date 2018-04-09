@@ -1,21 +1,23 @@
 <?php
+
 $servername = "localhost";
 $username = "root";
 $password = "root";
 $dbname = "SimonSite";
+$port= "8888";
 
 try {
     $conn = new PDO("mysql:dbname=$dbname; host=$servername", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-
     // Create Filenames table
     $sql_Create_Filenames_Table = "CREATE TABLE Filenames (
     filenameID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    dragDropSortOrderID INT,
     filename VARCHAR(500) NOT NULL,
     isThumbnail ENUM('1','0') NOT NULL,
-    lastUpdated TIMESTAMP    
+    lastUpdated TIMESTAMP 
     )";
     // use exec() because no results are returned
     $conn->exec($sql_Create_Filenames_Table);
@@ -26,7 +28,7 @@ try {
     $sql_Create_Galleries_Table = "CREATE TABLE Galleries (
     galleryID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     gallery VARCHAR(25) NOT NULL,
-    lastUpdated TIMESTAMP    
+    filenameID_fk INT  
     )";
     // use exec() because no results are returned
     $conn->exec($sql_Create_Galleries_Table);
@@ -37,8 +39,7 @@ try {
     $sql_Create_Titles_Table = "CREATE TABLE Titles (
     titleID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     title TEXT NULL,
-    filenameID_fk INT,
-    lastUpdated TIMESTAMP    
+    filenameID_fk INT   
     )";
     // use exec() because no results are returned
     $conn->exec($sql_Create_Titles_Table);
@@ -49,8 +50,7 @@ try {
     $sql_Create_Captions_Table = "CREATE TABLE Captions (
     captionID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     caption TEXT NULL,
-    filenameID_fk INT,
-    lastUpdated TIMESTAMP    
+    filenameID_fk INT   
     )";
     // use exec() because no results are returned
     $conn->exec($sql_Create_Captions_Table);
@@ -61,8 +61,7 @@ try {
     $sql_Create_JSONText_Table = "CREATE TABLE TextContents (
     textContentID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     textContent TEXT NULL,
-    filenameID_fk INT,
-    lastUpdated TIMESTAMP    
+    filenameID_fk INT
     )";
     // use exec() because no results are returned
     $conn->exec($sql_Create_JSONText_Table);
@@ -73,8 +72,7 @@ try {
     $sql_Create_JSONAbout_Table = "CREATE TABLE AboutContents (
     aboutID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     aboutContent TEXT NULL,
-    filenameID_fk INT,
-    lastUpdated TIMESTAMP    
+    filenameID_fk INT 
     )";
     // use exec() because no results are returned
     $conn->exec($sql_Create_JSONAbout_Table);
@@ -85,8 +83,7 @@ try {
     $sql_Create_JSONFirstCopyrightDate_Table = "CREATE TABLE FirstCopyrightDates (
     firstCopyrightDateID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     firstCopyrightDate INT(4),
-    filenameID_fk INT,
-    lastUpdated TIMESTAMP    
+    filenameID_fk INT
     )";
     // use exec() because no results are returned
     $conn->exec($sql_Create_JSONFirstCopyrightDate_Table);
@@ -97,8 +94,7 @@ try {
     $sql_Create_JSONSecondCopyrightDate_Table = "CREATE TABLE SecondCopyrightDates (
     secondCopyrightDateID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     secondCopyrightDate INT(4),
-    filenameID_fk INT,
-    lastUpdated TIMESTAMP    
+    filenameID_fk INT 
     )";
     // use exec() because no results are returned
     $conn->exec($sql_Create_JSONSecondCopyrightDate_Table);
@@ -109,8 +105,7 @@ try {
     $sql_Create_JSONThirdCopyrightDate_Table = "CREATE TABLE ThirdCopyrightDates (
     thirdCopyrightDateID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     thirdCopyrightDate INT(4),
-    filenameID_fk INT,
-    lastUpdated TIMESTAMP    
+    filenameID_fk INT
     )";
     // use exec() because no results are returned
     $conn->exec($sql_Create_JSONThirdCopyrightDate_Table);
@@ -121,8 +116,7 @@ try {
     $sql_Create_JSONFirstLocations_Table = "CREATE TABLE FirstLocations (
     firstLocationID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     firstLocation VARCHAR(255),
-    filenameID_fk INT,
-    lastUpdated TIMESTAMP    
+    filenameID_fk INT
     )";
     // use exec() because no results are returned
     $conn->exec($sql_Create_JSONFirstLocations_Table);
@@ -133,8 +127,7 @@ try {
     $sql_Create_JSONSecondLocations_Table = "CREATE TABLE SecondLocations (
     secondLocationID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     secondLocation VARCHAR(255),
-    filenameID_fk INT,
-    lastUpdated TIMESTAMP    
+    filenameID_fk INT
     )";
     // use exec() because no results are returned
     $conn->exec($sql_Create_JSONSecondLocations_Table);
@@ -145,8 +138,7 @@ try {
     $sql_Create_JSONFirstSourceOrganisation_Table = "CREATE TABLE FirstSourceOrganisations (
     firstSourceOrganisationID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     firstSourceOrganisation VARCHAR(255),
-    filenameID_fk INT,
-    lastUpdated TIMESTAMP    
+    filenameID_fk INT
     )";
     // use exec() because no results are returned
     $conn->exec($sql_Create_JSONFirstSourceOrganisation_Table);
@@ -157,8 +149,7 @@ try {
     $sql_Create_JSONSecondSourceOrganisation_Table = "CREATE TABLE SecondSourceOrganisations (
     secondSourceOrganisationID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     secondSourceOrganisation VARCHAR(255),
-    filenameID_fk INT,
-    lastUpdated TIMESTAMP    
+    filenameID_fk INT
     )";
     // use exec() because no results are returned
     $conn->exec($sql_Create_JSONSecondSourceOrganisation_Table);
@@ -169,8 +160,7 @@ try {
     $sql_Create_JSONThirdSourceOrganisation_Table = "CREATE TABLE ThirdSourceOrganisations (
     thirdSourceOrganisationID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     thirdSourceOrganisation VARCHAR(255),
-    filenameID_fk INT,
-    lastUpdated TIMESTAMP    
+    filenameID_fk INT
     )";
     // use exec() because no results are returned
     $conn->exec($sql_Create_JSONThirdSourceOrganisation_Table);

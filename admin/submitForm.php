@@ -12,61 +12,48 @@ try {
 
     // Insert filename 
     $sql_Filenames = "INSERT INTO Filenames (filename, isThumbnail) VALUES ('$_GET[filename]','$_GET[isThumbnail]')";
-    $sql_Galleries = "INSERT INTO Galleries (gallery) VALUES ('$_GET[gallery]')";
-    $sql_Captions = "INSERT INTO Captions (caption) VALUES ('$_GET[caption]')";
-    $sql_AboutContents = "INSERT INTO AboutContents (aboutContent) VALUES ('$_GET[aboutContent]')";
-    $sql_TextContents = "INSERT INTO TextContents (textContent) VALUES ('$_GET[textContent]')";
-    $sql_FirstCopyrightDates = "INSERT INTO FirstCopyrightDates (firstCopyrightDate) VALUES ('$_GET[firstCopyrightDate]')";
-    $sql_SecondCopyrightDates = "INSERT INTO SecondCopyrightDates (secondCopyrightDate) VALUES ('$_GET[secondCopyrightDate]')";
-    $sql_ThirdCopyrightDates = "INSERT INTO ThirdCopyrightDates (thirdCopyrightDate) VALUES ('$_GET[thirdCopyrightDate]')";
-    $sql_FirstLocations = "INSERT INTO FirstLocations (firstLocation) VALUES ('$_GET[firstLocation]')";
-    $sql_SecondLocations = "INSERT INTO SecondLocations (secondLocation) VALUES ('$_GET[secondLocation]')";
-    $sql_FirstSourceOrganisations = "INSERT INTO FirstSourceOrganisations (firstSourceOrganisation) VALUES ('$_GET[firstSourceOrganisation]')";
-    $sql_SecondSourceOrganisations = "INSERT INTO SecondSourceOrganisations (secondSourceOrganisation) VALUES ('$_GET[secondSourceOrganisation]')";
-    $sql_ThirdSourceOrganisations = "INSERT INTO ThirdSourceOrganisations (thirdSourceOrganisation) VALUES ('$_GET[thirdSourceOrganisation]')";
-    
 
-    $conn->query($sql_Filenames);
+        $conn->query($sql_Filenames);
 
-    // get primary key ID of filename just added into filenames table
+    // get primary key ID of filename that was just inserted into filenames table 
     $filenameID_pk = $conn->lastInsertId();
 
+    // insert the value of the filename primary key into the foreign key field in each table  
+    $sql_Galleries = "INSERT INTO Galleries (gallery, filenameID_fk) VALUES ('$_GET[gallery]', $filenameID_pk)";
+        $conn->query($sql_Galleries);
 
-    $conn->query($sql_Galleries);
-    $conn->query("INSERT INTO Galleries (filenameID_fk) VALUES (\".$filenameID_pk.\")");
-    
-    // set filename primary key as captions foreign key and ditto for remaining tables 
-    $conn->query("INSERT INTO Captions (filenameID_fk) VALUES (\".$filenameID_pk.\")");
+    $sql_Captions = "INSERT INTO Captions (caption, filenameID_fk) VALUES ('$_GET[caption]', $filenameID_pk)";
+        $conn->query($sql_Captions);
 
-    $conn->query($sql_AboutContents);
-    $conn->query("INSERT INTO AboutContents (filenameID_fk) VALUES (\".$filenameID_pk.\")");
-    
-    $conn->query($sql_TextContents);
-    $conn->query("INSERT INTO TextContents (filenameID_fk) VALUES (\".$filenameID_pk.\")");
+    $sql_AboutContents = "INSERT INTO AboutContents (aboutContent, filenameID_fk) VALUES ('$_GET[aboutContent]', $filenameID_pk)";
+        $conn->query($sql_AboutContents);
 
-    $conn->query($sql_FirstCopyrightDates);
-    $conn->query("INSERT INTO FirstCopyrightDates (filenameID_fk) VALUES (\".$filenameID_pk.\")");
+    $sql_TextContents = "INSERT INTO TextContents (textContent, filenameID_fk) VALUES ('$_GET[textContent]', $filenameID_pk)";
+        $conn->query($sql_TextContents);
 
-    $conn->query($sql_SecondCopyrightDates);
-    $conn->query("INSERT INTO SecondCopyrightDates (filenameID_fk) VALUES (\".$filenameID_pk.\")");
+    $sql_FirstCopyrightDates = "INSERT INTO FirstCopyrightDates (firstCopyrightDate, filenameID_fk) VALUES ('$_GET[firstCopyrightDate]',$filenameID_pk)";
+        $conn->query($sql_FirstCopyrightDates);
 
-    $conn->query($sql_ThirdCopyrightDates);
-    $conn->query("INSERT INTO ThirdCopyrightDates (filenameID_fk) VALUES (\".$filenameID_pk.\")");
+    $sql_SecondCopyrightDates = "INSERT INTO SecondCopyrightDates (secondCopyrightDate, filenameID_fk) VALUES ('$_GET[secondCopyrightDate]', $filenameID_pk)";
+        $conn->query($sql_SecondCopyrightDates);
 
-    $conn->query($sql_FirstLocations);
-    $conn->query("INSERT INTO FirstLocations (filenameID_fk) VALUES (\".$filenameID_pk.\")");
+    $sql_ThirdCopyrightDates = "INSERT INTO ThirdCopyrightDates (thirdCopyrightDate, filenameID_fk) VALUES ('$_GET[thirdCopyrightDate]', $filenameID_pk)";
+        $conn->query($sql_ThirdCopyrightDates);
 
-    $conn->query($sql_SecondLocations);
-    $conn->query("INSERT INTO SecondLocations (filenameID_fk) VALUES (\".$filenameID_pk.\")");
+    $sql_FirstLocations = "INSERT INTO FirstLocations (firstLocation, filenameID_fk) VALUES ('$_GET[firstLocation]', $filenameID_pk)";
+        $conn->query($sql_FirstLocations);
 
-    $conn->query($sql_FirstSourceOrganisations);
-    $conn->query("INSERT INTO FirstSourceOrganisations (filenameID_fk) VALUES (\".$filenameID_pk.\")");
+    $sql_SecondLocations = "INSERT INTO SecondLocations (secondLocation, filenameID_fk) VALUES ('$_GET[secondLocation]', $filenameID_pk)";
+        $conn->query($sql_SecondLocations);
 
-    $conn->query($sql_SecondSourceOrganisations);
-    $conn->query("INSERT INTO SecondSourceOrganisations (filenameID_fk) VALUES (\".$filenameID_pk.\")");
+    $sql_FirstSourceOrganisations = "INSERT INTO FirstSourceOrganisations (firstSourceOrganisation, filenameID_fk) VALUES ('$_GET[firstSourceOrganisation]', $filenameID_pk)";
+        $conn->query($sql_FirstSourceOrganisations);
 
-    $conn->query($sql_ThirdSourceOrganisations);
-    $conn->query("INSERT INTO ThirdSourceOrganisations (filenameID_fk) VALUES (\".$filenameID_pk.\")");
+    $sql_SecondSourceOrganisations = "INSERT INTO SecondSourceOrganisations (secondSourceOrganisation, filenameID_fk) VALUES ('$_GET[secondSourceOrganisation]', $filenameID_pk )";
+        $conn->query($sql_SecondSourceOrganisations);
+
+    $sql_ThirdSourceOrganisations = "INSERT INTO ThirdSourceOrganisations (thirdSourceOrganisation, filenameID_fk) VALUES ('$_GET[thirdSourceOrganisation]', $filenameID_pk)";
+        $conn->query($sql_ThirdSourceOrganisations);
 
     }
 catch(PDOException $e)

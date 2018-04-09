@@ -44,7 +44,7 @@
 								{
 									"@type": "Organization",
 									"name" : "Simon Turtle",
-									"url": "https://simonturtle.com",
+									"url": "https://www.simonturtle.com",
 									"sameAs":
 										[
 											"https://en-gb.facebook.com/public/Simon-Turtle", 
@@ -84,8 +84,8 @@
 											"name":"Simon Turtle"
 										},
 									"url":"https://www.simonturtle.com",
-									"description":"The portfolio site of Simon Turtle, a London based people and portrait photographer specialising in actors, celebrities, comedians and theatre advertising.",
-									"keywords":"photographer, photography, theatre, stage, West End, celebrity, actor, comedian, advertising",
+									"description":"Photography portfolio of Simon Turtle - a London based people and portrait photographer specialising in actors,  musicians, celebrities, comedians and theatre advertising",
+									"keywords":"photographer, photography, photographs, photos, theatre, stage, West End, celebrity, actor, comedian, advertising",
 									"potentialAction": 
 										{ 
     										"@type": "SearchAction", 
@@ -122,8 +122,8 @@
 										<div class="box">
 											<picture>
 												<source media="(min-width: 400px)" srcset="./images/home/lionking-398w.jpg">
-												<source media="(min-width: 240px)" srcset="./images/home/lionking-195w.jpg">
-												<img src="#" alt="Lionking" style="width:100%;">
+												<source media="(min-width: 340px)" srcset="./images/home/lionking-195w.jpg">
+												<img src="./images/home/lionking-195w.jpg" alt="Lionking" style="width:100%;">
 											</picture>
 										</div>
 										<h2 class="caption">Portfolio</h2>        
@@ -135,8 +135,8 @@
 										<div class="box">
 											<picture>
 											<source media="(min-width: 400px)" srcset="./images/home/fs-398w.jpg">
-											<source media="(min-width: 240px)" srcset="./images/home/fs-195w.jpg">
-											<img src="#" alt="French and Saunders" style="width:100%;">
+											<source media="(min-width: 340px)" srcset="./images/home/fs-195w.jpg">
+											<img src="./images/home/fs-195w.jpg" alt="French and Saunders" style="width:100%;">
 									 </picture>
 										</div>
 										<h2 class="caption">Portraits</h2>  
@@ -148,8 +148,8 @@
 										<div class="box">
 											<picture>
 												<source media="(min-width: 400px)" srcset="./images/home/oac-398w.jpg">
-												<source media="(min-width: 240px)" srcset="./images/home/oac-195w.jpg">
-												<img src="#" alt="Once a Catholic" style="width:100%;">
+												<source media="(min-width: 340px)" srcset="./images/home/oac-195w.jpg">
+												<img src="./images/home/oac-195w.jpg" alt="Once a Catholic" style="width:100%;">
 											</picture>           	
 										</div>
 										<h2 class="caption">Archive</h2>   
@@ -161,8 +161,8 @@
 										<div class="box">
 											<picture>
 													<source media="(min-width: 400px)" srcset="./images/home/equus-398w.jpg">
-													<source media="(min-width: 240px)" srcset="./images/home/equus-195w.jpg">
-													<img src="#" alt="Equus" style="width:100%;">
+													<source media="(min-width: 340px)" srcset="./images/home/equus-195w.jpg">
+													<img src="./images/home/equus-195w.jpg" alt="Equus" style="width:100%;">
 												</picture>
 										</div>
 										<h2 class="caption">Posters</h2>  
@@ -174,8 +174,8 @@
 										<div class="box">
 											<picture>
 											<source media="(min-width: 400px)" srcset="./images/home/ella-398w.jpg">
-											<source media="(min-width: 240px)" srcset="./images/home/ella-195w.jpg">
-											<img src="#" alt="Ella" style="width:100%;">
+											<source media="(min-width: 340px)" srcset="./images/home/ella-195w.jpg">
+											<img src="./images/home/ella-195w.jpg" alt="Ella" style="width:100%;">
 									 </picture>
 										</div>
 										<h2 class="caption">Ella</h2> 
@@ -184,25 +184,7 @@
 					</div>	
 				</section>
 		<div id="contactBottom"><h2><a href="contact/">Contact</a></h2></div>
-	<!--register service worker-->
-	<script>
-  		document.addEventListener('DOMContentLoaded', init, false);
-		function init() 
-		{
-			if ('serviceWorker' in navigator) 
-  			{
-    				console.log("Will the service worker register?");
-    				navigator.serviceWorker.register('service-worker.js')
-      				.then(function(reg)
-      			{
-        			console.log("Yes, it did.");
-      			})
-      				.catch(function(err) 
-      			{
-        			console.log("No it didn't. This happened: ", err)
-      			});
-  			}
-  		}
-	</script>
+		<!--register service worker-->
+    <script src="register-service-worker.js"></script>
 	</body>
 </html>

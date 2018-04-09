@@ -27,10 +27,6 @@ print "             {\n";
 
 print "                     \"@context\":\"http://schema.org\",\n";
 
-print "                     \"@type\":\"ImageObject\"\n";
-
-print "                      }\n"; 
-
 print "                     \"@graph\":\n";
 
 print "                          [\n";
@@ -114,10 +110,24 @@ print "                             {\n";
         // increment counter on each loop 
         ++$i; 
 
+
+        if ($i == 1) 
+        {
+
+print "";
+        }
+
+        elseif ($i > 1) 
+        {
+
+print "                             {\n";
+        }
+
+print "                                 \"@type\":\"Photograph\",\n";
         
 print "                                 \"about\":\"$about\",\n"; 
 
-print "                                 \"caption\":\"$caption\",\n";
+print "                                 \"description\":\"$caption\",\n";
 
 print "                                 \"text\":\"$text\",\n";
 
@@ -154,8 +164,8 @@ print "                             }\n";
 
     }
 
-print "                          ]\n";
+print "                             ]\n";
 
-print "                      }\n";
+print "                         }\n";
 
 ?>

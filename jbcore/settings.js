@@ -56,7 +56,9 @@
 				navButtonIconColor: "#808080",
 				navButtonIconHoverColor: "#ffffff",
 				enableKeyboardControls:"true",
-				largeImageQuality:"99"
+				largeImageQuality:"99",
+				enableDirectLinks:"true",
+				enableLooping:"true"
 	});
 
 
