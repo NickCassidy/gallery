@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "root";
+$password = "";
 $dbname = "SimonSite";
 $port= "8888";
 
@@ -12,7 +12,6 @@ try {
 
     // Insert filename 
     $sql_Filenames = "INSERT INTO Filenames (filename, isThumbnail) VALUES ('$_GET[filename]','$_GET[isThumbnail]')";
-
         $conn->query($sql_Filenames);
 
     // get primary key ID of filename that was just inserted into filenames table 
@@ -31,29 +30,14 @@ try {
     $sql_TextContents = "INSERT INTO TextContents (textContent, filenameID_fk) VALUES ('$_GET[textContent]', $filenameID_pk)";
         $conn->query($sql_TextContents);
 
-    $sql_FirstCopyrightDates = "INSERT INTO FirstCopyrightDates (firstCopyrightDate, filenameID_fk) VALUES ('$_GET[firstCopyrightDate]',$filenameID_pk)";
-        $conn->query($sql_FirstCopyrightDates);
+    $sql_CopyrightDates = "INSERT INTO CopyrightDates (copyrightDate, filenameID_fk) VALUES ('$_GET[copyrightDate]',$filenameID_pk)";
+        $conn->query($sql_CopyrightDates);
 
-    $sql_SecondCopyrightDates = "INSERT INTO SecondCopyrightDates (secondCopyrightDate, filenameID_fk) VALUES ('$_GET[secondCopyrightDate]', $filenameID_pk)";
-        $conn->query($sql_SecondCopyrightDates);
+    $sql_Locations = "INSERT INTO Locations (location, filenameID_fk) VALUES ('$_GET[location]', $filenameID_pk)";
+        $conn->query($sql_Locations);
 
-    $sql_ThirdCopyrightDates = "INSERT INTO ThirdCopyrightDates (thirdCopyrightDate, filenameID_fk) VALUES ('$_GET[thirdCopyrightDate]', $filenameID_pk)";
-        $conn->query($sql_ThirdCopyrightDates);
-
-    $sql_FirstLocations = "INSERT INTO FirstLocations (firstLocation, filenameID_fk) VALUES ('$_GET[firstLocation]', $filenameID_pk)";
-        $conn->query($sql_FirstLocations);
-
-    $sql_SecondLocations = "INSERT INTO SecondLocations (secondLocation, filenameID_fk) VALUES ('$_GET[secondLocation]', $filenameID_pk)";
-        $conn->query($sql_SecondLocations);
-
-    $sql_FirstSourceOrganisations = "INSERT INTO FirstSourceOrganisations (firstSourceOrganisation, filenameID_fk) VALUES ('$_GET[firstSourceOrganisation]', $filenameID_pk)";
-        $conn->query($sql_FirstSourceOrganisations);
-
-    $sql_SecondSourceOrganisations = "INSERT INTO SecondSourceOrganisations (secondSourceOrganisation, filenameID_fk) VALUES ('$_GET[secondSourceOrganisation]', $filenameID_pk )";
-        $conn->query($sql_SecondSourceOrganisations);
-
-    $sql_ThirdSourceOrganisations = "INSERT INTO ThirdSourceOrganisations (thirdSourceOrganisation, filenameID_fk) VALUES ('$_GET[thirdSourceOrganisation]', $filenameID_pk)";
-        $conn->query($sql_ThirdSourceOrganisations);
+    $sql_SourceOrganisations = "INSERT INTO SourceOrganisations (sourceOrganisation, filenameID_fk) VALUES ('$_GET[sourceOrganisation]', $filenameID_pk)";
+        $conn->query($sql_SourceOrganisations);
 
     }
 catch(PDOException $e)
@@ -63,16 +47,11 @@ catch(PDOException $e)
     echo $sql_Captions . "<br>" . $e->getMessage();
     echo $sql_AboutContents . "<br>" . $e->getMessage();
     echo $sql_TextContents . "<br>" . $e->getMessage();
-    echo $sql_FirstCopyrightDates . "<br>" . $e->getMessage();
-    echo $sql_SecondCopyrightDates . "<br>" . $e->getMessage();
-    echo $sql_ThirdCopyrightDates . "<br>" . $e->getMessage();
-    echo $sql_FirstLocations . "<br>" . $e->getMessage();
-    echo $sql_SecondLocations . "<br>" . $e->getMessage();
-    echo $sql_FirstSourceOrganisations . "<br>" . $e->getMessage();
-    echo $sql_SecondSourceOrganisations . "<br>" . $e->getMessage();
-    echo $sql_ThirdSourceOrganisations . "<br>" . $e->getMessage();
+    echo $sql_CopyrightDates . "<br>" . $e->getMessage();
+    echo $sql_Locations . "<br>" . $e->getMessage();
+    echo $sql_SourceOrganisations . "<br>" . $e->getMessage();
     }
 
-require_once "submissionSuccess.php"; 
+require_once "retrievePosts.php"; 
 
 ?>
