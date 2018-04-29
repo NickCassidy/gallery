@@ -7,46 +7,55 @@ try {
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // Insert filename 
-    $sql_Filenames = "INSERT INTO Filenames (filename) VALUES ('$_GET[filename]')";
-        $conn->query($sql_Filenames);
+    // Sanitise form data 
+    $sanitisedFilename = htmlspecialchars($_GET[filename]);
+    // Insert filename into DB
+    $sql_Filename = "INSERT INTO Filenames (filename) VALUES ('$sanitisedFilename')";
+        $conn->query($sql_Filename);
 
     // get primary key ID of filename that was just inserted into filenames table 
     $filenameID_pk = $conn->lastInsertId();
 
+    $sanitisedGallery = htmlspecialchars($_GET[gallery]);
     // insert the value of the filename primary key into the foreign key field in each table  
-    $sql_Galleries = "INSERT INTO Galleries (gallery, filenameID_fk) VALUES ('$_GET[gallery]', $filenameID_pk)";
-        $conn->query($sql_Galleries);
+    $sql_Gallery = "INSERT INTO Galleries (gallery, filenameID_fk) VALUES ('$sanitisedGallery', $filenameID_pk)";
+        $conn->query($sql_Gallery);
 
-    $sql_Captions = "INSERT INTO Captions (caption, filenameID_fk) VALUES ('$_GET[caption]', $filenameID_pk)";
-        $conn->query($sql_Captions);
+    $sanitisedCaption = htmlspecialchars($_GET[caption]);
+    $sql_Caption = "INSERT INTO Captions (caption, filenameID_fk) VALUES ('$sanitisedCaption', $filenameID_pk)";
+        $conn->query($sql_Caption);
 
-    $sql_AboutContents = "INSERT INTO AboutContents (aboutContent, filenameID_fk) VALUES ('$_GET[aboutContent]', $filenameID_pk)";
-        $conn->query($sql_AboutContents);
+    $sanitisedAboutContent = htmlspecialchars($_GET[aboutContent]);    
+    $sql_AboutContent = "INSERT INTO AboutContents (aboutContent, filenameID_fk) VALUES ('$sanitisedAboutContent', $filenameID_pk)";
+        $conn->query($sql_AboutContent);
 
-    $sql_TextContents = "INSERT INTO TextContents (textContent, filenameID_fk) VALUES ('$_GET[textContent]', $filenameID_pk)";
-        $conn->query($sql_TextContents);
+    $sanitisedTextContent = htmlspecialchars($_GET[textContent]);    
+    $sql_TextContent = "INSERT INTO TextContents (textContent, filenameID_fk) VALUES ('$sanitisedTextContent', $filenameID_pk)";
+        $conn->query($sql_TextContent);
 
-    $sql_CopyrightDates = "INSERT INTO CopyrightDates (copyrightDate, filenameID_fk) VALUES ('$_GET[copyrightDate]',$filenameID_pk)";
-        $conn->query($sql_CopyrightDates);
+    $sanitisedCopyrightDate = htmlspecialchars($_GET[copyrightDate]);    
+    $sql_CopyrightDate = "INSERT INTO CopyrightDates (copyrightDate, filenameID_fk) VALUES ('$sanitisedCopyrightDate',$filenameID_pk)";
+        $conn->query($sql_CopyrightDate);
 
-    $sql_Locations = "INSERT INTO Locations (location, filenameID_fk) VALUES ('$_GET[location]', $filenameID_pk)";
-        $conn->query($sql_Locations);
+    $sanitisedLocation = htmlspecialchars($_GET[location]);    
+    $sql_Location = "INSERT INTO Locations (location, filenameID_fk) VALUES ('$sanitisedLocation', $filenameID_pk)";
+        $conn->query($sql_Location);
 
-    $sql_SourceOrganisations = "INSERT INTO SourceOrganisations (sourceOrganisation, filenameID_fk) VALUES ('$_GET[sourceOrganisation]', $filenameID_pk)";
-        $conn->query($sql_SourceOrganisations);
+    $sanitisedSourceOrganisation = htmlspecialchars($_GET[sourceOrganisation]);
+    $sql_SourceOrganisation = "INSERT INTO SourceOrganisations (sourceOrganisation, filenameID_fk) VALUES ('$sanitisedSourceOrganisation', $filenameID_pk)";
+        $conn->query($sql_SourceOrganisation);
 
     }
 catch(PDOException $e)
     {
-    echo $sql_Filenames . "<br>" . $e->getMessage();
-    echo $sql_Galleries . "<br>" . $e->getMessage();
-    echo $sql_Captions . "<br>" . $e->getMessage();
-    echo $sql_AboutContents . "<br>" . $e->getMessage();
-    echo $sql_TextContents . "<br>" . $e->getMessage();
-    echo $sql_CopyrightDates . "<br>" . $e->getMessage();
-    echo $sql_Locations . "<br>" . $e->getMessage();
-    echo $sql_SourceOrganisations . "<br>" . $e->getMessage();
+    echo $sql_Filename . "<br>" . $e->getMessage();
+    echo $sql_Gallery . "<br>" . $e->getMessage();
+    echo $sql_Caption . "<br>" . $e->getMessage();
+    echo $sql_AboutContent . "<br>" . $e->getMessage();
+    echo $sql_TextContent . "<br>" . $e->getMessage();
+    echo $sql_CopyrightDate . "<br>" . $e->getMessage();
+    echo $sql_Location . "<br>" . $e->getMessage();
+    echo $sql_SourceOrganisation . "<br>" . $e->getMessage();
     }
 
 echo "<script>location.href='sortable/index.php';</script>";

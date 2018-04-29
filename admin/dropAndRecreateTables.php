@@ -7,8 +7,8 @@
       	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:700">
 </head>	
 <body>
-		<h1>Create Tables</h1>
-
+        <div class="createTablesWrapper">
+        <h1>Create Tables</h1>
 <?php
 
 require_once "webConfig.php";
@@ -20,7 +20,7 @@ try {
 
 $sql_dropTables = "DROP TABLE Filenames, Galleries, Titles, Captions, TextContents, AboutContents, CopyrightDates, Locations, SourceOrganisations";
     $conn->exec($sql_dropTables);
-    echo "Existing tables have been dropped successfully\n";
+    echo "Existing tables have been dropped successfully and then...\n";
     echo "<br><br>";
 
     // Create Filenames table
@@ -47,7 +47,7 @@ $sql_dropTables = "DROP TABLE Filenames, Galleries, Titles, Captions, TextConten
     // Create Titles table
     $sql_Create_Titles_Table = "CREATE TABLE Titles (
     titleID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    title TEXT NULL,
+    title VARCHAR(250) NULL,
     filenameID_fk INT   
     )";
     $conn->exec($sql_Create_Titles_Table);
@@ -58,7 +58,7 @@ $sql_dropTables = "DROP TABLE Filenames, Galleries, Titles, Captions, TextConten
     // Create Captions table
     $sql_Create_Captions_Table = "CREATE TABLE Captions (
     captionID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    caption TEXT NULL,
+    caption VARCHAR(500) NULL,
     filenameID_fk INT   
     )";
     $conn->exec($sql_Create_Captions_Table);
@@ -69,7 +69,7 @@ $sql_dropTables = "DROP TABLE Filenames, Galleries, Titles, Captions, TextConten
     // Create TextContent table
     $sql_Create_TextContents_Table = "CREATE TABLE TextContents (
     textContentID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    textContent TEXT NULL,
+    textContent VARCHAR(250) NULL,
     filenameID_fk INT
     )";
     $conn->exec($sql_Create_TextContents_Table);
@@ -80,7 +80,7 @@ $sql_dropTables = "DROP TABLE Filenames, Galleries, Titles, Captions, TextConten
     // Create AboutContent table
     $sql_Create_AboutContents_Table = "CREATE TABLE AboutContents (
     aboutID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    aboutContent TEXT NULL,
+    aboutContent VARCHAR(500) NULL,
     filenameID_fk INT 
     )";  
     $conn->exec($sql_Create_AboutContents_Table);
@@ -91,7 +91,7 @@ $sql_dropTables = "DROP TABLE Filenames, Galleries, Titles, Captions, TextConten
     // Create CopyrightDates table
     $sql_Create_CopyrightDates_Table = "CREATE TABLE CopyrightDates (
     copyrightDateID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    copyrightDate VARCHAR(100),
+    copyrightDate VARCHAR(100) NULL,
     filenameID_fk INT
     )";
     $conn->exec($sql_Create_CopyrightDates_Table);
@@ -102,7 +102,7 @@ $sql_dropTables = "DROP TABLE Filenames, Galleries, Titles, Captions, TextConten
     // Create Locations table
     $sql_Create_Locations_Table = "CREATE TABLE Locations (
     locationID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    location VARCHAR(255),
+    location VARCHAR(255) NULL,
     filenameID_fk INT
     )";
     $conn->exec($sql_Create_Locations_Table);
@@ -113,7 +113,7 @@ $sql_dropTables = "DROP TABLE Filenames, Galleries, Titles, Captions, TextConten
 	// Create SourceOrganisations table
     $sql_Create_SourceOrganisations_Table = "CREATE TABLE SourceOrganisations (
     sourceOrganisationID_pk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    sourceOrganisation VARCHAR(255),
+    sourceOrganisation VARCHAR(255) NULL,
     filenameID_fk INT
     )";
     $conn->exec($sql_Create_SourceOrganisations_Table);
@@ -137,6 +137,13 @@ catch(PDOException $e)
 
 $conn = null; 
 ?>
+
+ <a href="chooseGallery.php"><button class="ml4 js-serialize-button button navy bg-white">Start again</button></a>
+        
+        </div>
+
+       
+
 
 </body>
 </html>

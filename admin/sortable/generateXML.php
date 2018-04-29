@@ -59,6 +59,8 @@ $pathThumbImage = "../images/" . $_SESSION['nameOfFolder'] . "/thumbs/";
 	$image->appendChild($domtree->createElement('copyrightYear', $row['copyrightDate']));
 	$image->appendChild($domtree->createElement('locationCreated', $row['location']));	
 	$image->appendChild($domtree->createElement('sourceOrganisation', $row['sourceOrganisation']));	
+
+    $xmlRoot->appendChild($image);
 }
 
 // retrieve the name of the folder from the saved session to configure where the config.xml file gets saved and print / save the XML file

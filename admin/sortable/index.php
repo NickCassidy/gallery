@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<!doctype html>
+<!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
 	<title>***</title>
@@ -25,7 +25,7 @@ echo "<p>You are sorting file order for the <strong>" . $_SESSION['nameOfFolder'
 ?>
 
 					<button class="ml4 js-serialize-button button navy bg-white">Submit</button>
-					<a href="/web/admin/dropzone/chooseGallery.php"><button class="ml4 js-serialize-button button navy bg-white">Add another photo</button></a>
+					<a href="/web/admin/dropzone/indexDropzonePage.php<?php echo "?name=" . $_SESSION['nameOfFolder'];?>"><button class="ml4 js-serialize-button button navy bg-white">Add another photo</button></a>
 
 			</div>
 			<div class="col col-6">
