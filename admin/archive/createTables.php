@@ -1,17 +1,10 @@
-<!DOCTYPE html> 
-<html lang="en">
-<head>
-		<link href="dropzone/css/general.css" type="text/css" rel="stylesheet" />
-      	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin/>
-      	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
-      	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:700">
-</head>	
-<body>
-		<h1>Create Tables</h1>
-
 <?php
 
-require_once "webConfig.php";
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "SimonSite";
+$port= "8888";
 
 try {
     $conn = new PDO("mysql:dbname=$dbname; host=$servername", $username, $password);
@@ -20,8 +13,8 @@ try {
 
 $sql_dropTables = "DROP TABLE Filenames, Galleries, Titles, Captions, TextContents, AboutContents, CopyrightDates, Locations, SourceOrganisations";
     $conn->exec($sql_dropTables);
-    echo "Existing tables have been dropped successfully\n";
-    echo "<br><br>";
+    echo "The tables were dropped successfully\n";
+    echo "<br>";
 
     // Create Filenames table
     $sql_Create_Filenames_Table = "CREATE TABLE Filenames (
@@ -32,6 +25,7 @@ $sql_dropTables = "DROP TABLE Filenames, Galleries, Titles, Captions, TextConten
     $conn->exec($sql_Create_Filenames_Table);
     echo "The Filenames table was created successfully\n";
     echo "<br>";
+
     
     // Create Galleries table
     $sql_Create_Galleries_Table = "CREATE TABLE Galleries (
@@ -137,6 +131,3 @@ catch(PDOException $e)
 
 $conn = null; 
 ?>
-
-</body>
-</html>

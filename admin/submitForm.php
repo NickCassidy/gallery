@@ -1,9 +1,6 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "SimonSite";
-$port= "8888";
+
+require_once "webConfig.php";
 
 try {
     $conn = new PDO("mysql:dbname=$dbname; host=$servername", $username, $password);
@@ -11,7 +8,7 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Insert filename 
-    $sql_Filenames = "INSERT INTO Filenames (filename, isThumbnail) VALUES ('$_GET[filename]','$_GET[isThumbnail]')";
+    $sql_Filenames = "INSERT INTO Filenames (filename) VALUES ('$_GET[filename]')";
         $conn->query($sql_Filenames);
 
     // get primary key ID of filename that was just inserted into filenames table 
@@ -52,6 +49,6 @@ catch(PDOException $e)
     echo $sql_SourceOrganisations . "<br>" . $e->getMessage();
     }
 
-require_once "retrievePosts.php"; 
+echo "<script>location.href='sortable/index.php';</script>";
 
 ?>
