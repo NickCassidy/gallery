@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<juiceboxgallery>
+  <image imageURL="../images/portfolio/monkey7.jpg" thumbURL="../images/portfolio/thumbs/monkey7.jpg" linkURL="#" linkTarget="_blank">
+    <title> </title>
+    <caption>dsfd</caption>
+    <about>fdfg</about>
+    <text>dfdsa</text>
+    <copyrightYear>, 2018</copyrightYear>
+    <locationCreated/>
+    <sourceOrganisation/>
+  </image>
+  <image imageURL="../images/portfolio/coutinho.jpg" thumbURL="../images/portfolio/thumbs/coutinho.jpg" linkURL="#" linkTarget="_blank">
+    <title> </title>
+    <caption>dds</caption>
+    <about>sdf</about>
+    <text>sfds</text>
+    <copyrightYear/>
+    <locationCreated/>
+    <sourceOrganisation/>
+  </image>
+</juiceboxgallery>

@@ -73,7 +73,8 @@ echo "The data has been inserted into the SortOrder table\n";
 </pre>
 
 	<div id="formContainer">
-		<a href="generateXML.php"><button class="ml4 js-serialize-button button navy bg-white">Generate XML</button></a>
+		<a href="generateXML.php"><button class="ml4 js-serialize-button button navy bg-white">Generate and publish (config.xml)</button></a>
+        <a href="generateOnlyXML.php"><button class="ml4 js-serialize-button button navy bg-white">Just generate (configNew.xml)</button></a>
 	</div>
 	<script>
 		//window.stop()

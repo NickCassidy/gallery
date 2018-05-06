@@ -67,6 +67,6 @@ $pathThumbImage = "../images/" . $_SESSION['nameOfFolder'] . "/thumbs/";
 
     $domtree->formatOutput = TRUE;
     print $domtree->saveXML();
-	$domtree->save("../dropzone/" . $_SESSION['nameOfFolder'] .'/newConfig.xml');
+	$domtree->save("../../" . $_SESSION['nameOfFolder'] .'/config.xml');
 
 ?>

@@ -9,42 +9,42 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:700">
   	<script src="js/html5sortable.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>.btn {float:left;} </style>
 </head>
 <body>
-	<div class="px2 sm-px3 py2 mb3 col-8 mx-auto">
-		<section class="mb3 mx-auto col col-12">
+
   		<div class="p3 clearfix bg-yellow maroon">
 			<div class="col col-12 mb1">
 					<h1 class="h1 mt1">Sort photo order</h1>
 
 <?php
-
 // retrieve the name of the folder from the saved session
 echo "<p>You are sorting file order for the <strong>" . $_SESSION['nameOfFolder'] . "</strong> gallery</p>";
-
 ?>
 
 					<button class="ml4 js-serialize-button button navy bg-white">Submit</button>
-					<a href="/web/admin/dropzone/indexDropzonePage.php<?php echo "?name=" . $_SESSION['nameOfFolder'];?>"><button class="ml4 js-serialize-button button navy bg-white">Add another photo</button></a>
+					
+					<a href="index.php<?php echo "?gallery=" . $_SESSION['nameOfFolder'];?>"><button class="ml4 js-serialize-button button navy bg-white">Reset</button></a></div>
 
-			</div>
-			<div class="col col-6">
+					<a href="/web/admin/dropzone/indexDropzonePage.php<?php echo "?gallery=" . $_SESSION['nameOfFolder'];?>"><button class="ml4 js-serialize-button button navy bg-white">Add another photo</button></a>
 
-					<h2 class="h2 mt1">Put the photos in order</h2>
-					<!-- container for selected photos -->
-					<ul class="p3 border maroon border-maroon js-sortable-copy-target sortable list flex flex-column list-reset">
-					</ul>
-		</div>
-			<div class="col col-6">
-				<h2 class="h2 mt1">All available photos</h2>
+</div>
+						<div class="col col-6">
 
-				<ul class="ml4 js-sortable-copy sortable list flex flex-column list-reset">	
-					<?php require_once "generateItemList.php"; ?> 
-				</ul>
+							<h2 class="h2 mt1">Put the photos in order</h2>
+					
+								<!-- container for selected photos -->
+								<ul class="p3 border maroon border-maroon js-sortable-copy-target sortable list flex flex-column list-reset"></ul>
+						</div>
+				
+						<div class="col col-6">
+							<h2 class="h2 mt1">All available photos</h2>
 
-					<script type="text/javascript">
+								<ul class="ml4 js-sortable-copy sortable list flex flex-column list-reset"><?php require_once "generateItemList.php"; ?> </ul>
 
-						sortable('.js-sortable-copy-target', 
+	<script type="text/javascript">
+
+				sortable('.js-sortable-copy-target', 
 		{
 				forcePlaceholderSize: true,
 		
@@ -67,12 +67,11 @@ echo "<p>You are sorting file order for the <strong>" . $_SESSION['nameOfFolder'
 
 			// window.alert(document.querySelector('.serialized-content').innerHTML)
 
-
 var jsonString = JSON.stringify(serialized, null, ' ')
 
-$.ajax({    
+$.ajax
+	({    
     type: 'POST',  
-    //url: 'postSortable.php',
     url: 'postSortable.php',    
 	data: jsonString,
 	dataType: 'text',
@@ -87,22 +86,18 @@ $.ajax({
     		{ 
         	console.log(data);
     		}
-    
-		});    
- 
+	});    
 });
 
-</script>
-		</div>
-		</div>
-		  <div class="p2 bg-navy border-top yellow border-yellow">
-        <code>
-         <pre class="serialized-content">
-          </pre>
-        </code>
-      </div>
-		</section>
+	</script>
 	</div>
+	</div>
+		 <div class="p2 bg-navy border-top yellow border-yellow">
+        		<code>
+         			<pre class="serialized-content"></pre>
+        		</code>
+      	</div>
+
 
 	<script>
 		sortable('.js-sortable-copy', {

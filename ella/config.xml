@@ -1,137 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <juiceboxgallery>
-  <image imageURL="../images/ella/Dad.jpg"
-	thumbURL="../images/ella/thumbs/Dad.jpg"
-	llinkURL="#"
-linkTarget="_blank">
-	<title></title>
-    <caption></caption>
+  <image imageURL="../images/ella/monkey7.jpg" thumbURL="../images/ella/thumbs/monkey7.jpg" linkURL="#" linkTarget="_blank">
+    <title> </title>
+    <caption/>
+    <about/>
+    <text/>
+    <copyrightYear/>
+    <locationCreated/>
+    <sourceOrganisation/>
   </image>
-  <image imageURL="../images/ella/Party-Tree.jpg"
-	thumbURL="../images/ella/thumbs/Party-Tree.jpg"
-	linkURL="#"
-linkTarget="_blank">
-	<title></title>
-   	<caption></caption>
+  <image imageURL="../images/ella/monkey7.jpg" thumbURL="../images/ella/thumbs/monkey7.jpg" linkURL="#" linkTarget="_blank">
+    <title> </title>
+    <caption/>
+    <about/>
+    <text/>
+    <copyrightYear/>
+    <locationCreated/>
+    <sourceOrganisation/>
   </image>
-  <image imageURL="../images/ella/Ella-Evie.jpg"
-	thumbURL="../images/ella/thumbs/Ella-Evie.jpg"
-	linkURL="#"
-linkTarget="_blank">
-	<title></title>
-    <caption></caption>
-  </image>
-  <image imageURL="../images/ella/Ballet.jpg"
-	thumbURL="../images/ella/thumbs/Ballet.jpg"
-	linkURL="#"
-linkTarget="_blank">
-	<title></title>
-    <caption></caption>
-  </image>
-  <image imageURL="../images/ella/Thailand.jpg"
-	thumbURL="../images/ella/thumbs/Thailand.jpg"
-	linkURL="#"
-linkTarget="_blank">
-	<title></title>
-    <caption></caption>
-  </image>
-  <image imageURL="../images/ella/Tate.jpg"
-	thumbURL="../images/ella/thumbs/Tate.jpg"
-	linkURL="#"
-linkTarget="_blank">
-	<title></title>
-    <caption></caption>
-  </image>
-  <image imageURL="../images/ella/Pottery.jpg"
-	thumbURL="../images/ella/thumbs/Pottery.jpg"
-	linkURL="#"
-linkTarget="_blank">
-	<title></title>
-    <caption></caption>
-  </image>
-  <image imageURL="../images/ella/Ella-Grace.jpg"
-	thumbURL="../images/ella/thumbs/Ella-Grace.jpg"
-	linkURL="#"
-linkTarget="_blank">
-	<title></title>
-    <caption></caption>
-  </image>
-  <image imageURL="../images/ella/Sofa.jpg"
-	thumbURL="../images/ella/thumbs/Sofa.jpg"
-	linkURL="#"
-linkTarget="_blank">
-	<title></title>
-    <caption></caption>
-  </image>
-  <image imageURL="../images/ella/Ella-Sunday.jpg"
-	thumbURL="../images/ella/thumbs/Ella-Sunday.jpg"
-	linkURL="#"
-linkTarget="_blank">
-	<title></title>
-    <caption></caption>
-  </image>
-  <image imageURL="../images/ella/Fireworks.jpg"
-	thumbURL="../images/ella/thumbs/Fireworks.jpg"
-	linkURL="#"
-linkTarget="_blank">
-	<title></title>
-    <caption></caption>
-  </image>
-  <image imageURL="../images/ella/Ella-Sandy.jpg"
-	thumbURL="../images/ella/thumbs/Ella-Sandy.jpg"
-	linkURL="#"
-linkTarget="_blank">
-	<title></title>
-    <caption></caption>
-  </image>
-  <image imageURL="../images/ella/Ella-Fairy.jpg"
-	thumbURL="../images/ella/thumbs/Ella-Fairy.jpg"
-	linkURL="#"
-linkTarget="_blank">
-	<title></title>
-    <caption></caption>
-  </image>
-  <image imageURL="../images/ella/Ella-Phonebox.jpg"
-	thumbURL="../images/ella/thumbs/Ella-Phonebox.jpg"
-	linkURL="#"
-linkTarget="_blank">
-	<title></title>
-    <caption></caption>
-  </image>
-  <image imageURL="../images/ella/Lucy-Poppy.jpg"
-	thumbURL="../images/ella/thumbs/Lucy-Poppy.jpg"
-	llinkURL="#"
-linkTarget="_blank">
-	<title></title>
-    <caption></caption>
-  </image>
-  <image imageURL="../images/ella/Ella-Maddie.jpg"
-	thumbURL="../images/ella/thumbs/Ella-Maddie.jpg"
-	linkURL="#"
-linkTarget="_blank">
-	<title></title>
-    <caption></caption>
-  </image>
-  <image imageURL="../images/ella/Ella-Frida.jpg"
-	thumbURL="../images/ella/thumbs/Ella-Frida.jpg"
-	linkURL="#"
-linkTarget="_blank">
-	<title></title>
-    <caption></caption>
-  </image>
-  <image imageURL="../images/ella/Ella-Scissorhands.jpg"
-	thumbURL="../images/ella/thumbs/Ella-Scissorhands.jpg"
-	linkURL="#"
-linkTarget="_blank">
-	<title></title>
-    <caption></caption>
-  </image>
-  <image imageURL="../images/ella/Halloween.jpg"
-	thumbURL="../images/ella/thumbs/Halloween.jpg"
-	linkURL="#"
-linkTarget="_blank">
-	<title></title>
-    <caption></caption>
+  <image imageURL="../images/ella/monkey8.jpg" thumbURL="../images/ella/thumbs/monkey8.jpg" linkURL="#" linkTarget="_blank">
+    <title> </title>
+    <caption/>
+    <about/>
+    <text/>
+    <copyrightYear/>
+    <locationCreated/>
+    <sourceOrganisation/>
   </image>
 </juiceboxgallery>

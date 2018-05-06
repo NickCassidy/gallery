@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<juiceboxgallery>
+  <image imageURL="../images/archive/gerrard.jpg" thumbURL="../images/archive/thumbs/gerrard.jpg" linkURL="#" linkTarget="_blank">
+    <title> </title>
+    <caption>o'test</caption>
+    <about/>
+    <text/>
+    <copyrightYear>, </copyrightYear>
+    <locationCreated/>
+    <sourceOrganisation/>
+  </image>
+  <image imageURL="../images/archive/dijk.jpg" thumbURL="../images/archive/thumbs/dijk.jpg" linkURL="#" linkTarget="_blank">
+    <title> </title>
+    <caption/>
+    <about/>
+    <text/>
+    <copyrightYear/>
+    <locationCreated/>
+    <sourceOrganisation/>
+  </image>
+</juiceboxgallery>

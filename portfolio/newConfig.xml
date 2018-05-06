@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<juiceboxgallery>
+  <image imageURL="../images/portfolio/monkey4.jpg" thumbURL="../images/portfolio/thumbs/monkey4.jpg" linkURL="#" linkTarget="_blank">
+    <title> </title>
+    <caption>asdf</caption>
+    <about/>
+    <text/>
+    <copyrightYear>2017, 2010</copyrightYear>
+    <locationCreated/>
+    <sourceOrganisation/>
+  </image>
+</juiceboxgallery>
